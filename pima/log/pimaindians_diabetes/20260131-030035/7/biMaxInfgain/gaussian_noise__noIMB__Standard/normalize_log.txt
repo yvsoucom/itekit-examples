@@ -1,0 +1,72 @@
+[2026-01-31 09:55:32] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (2764, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 43.99013354386624, 'BMI': 18.200000762939453, 'Age': 20.978967167686413, 'Insulin': 14.993705603615345, 'Pregnancies': -0.028907615454650697, 'SkinThickness': 6.995757229982774, 'BloodPressure': 23.980745849860295}, 'max': {'Glucose': 199.0, 'BMI': 67.10903829056457, 'Age': 81.0, 'Insulin': 846.0100768695521, 'Pregnancies': 17.0, 'SkinThickness': 99.01060647312116, 'BloodPressure': 122.0}, 'mean': {'Glucose': 121.07505576085681, 'BMI': 32.278120632051824, 'Age': 33.50377731809819, 'Insulin': 138.70000676367928, 'Pregnancies': 3.8411351764292436, 'SkinThickness': 29.02039826389114, 'BloodPressure': 72.19246541568083}}
+
+[2026-01-31 09:55:32] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (2764, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.5384904609311563, 'BMI': -2.0743239229581976, 'Age': -1.0671162697464234, 'Insulin': -1.436538739689874, 'Pregnancies': -1.1562544764720912, 'SkinThickness': -2.479373344790633, 'BloodPressure': -3.9122067369259192}, 'max': {'Glucose': 2.566153301197167, 'BMI': 5.132120370430937, 'Age': 4.046687444095926, 'Insulin': 8.2136342866249, 'Pregnancies': 3.931480134910428, 'SkinThickness': 7.878986829485571, 'BloodPressure': 4.041701356128094}, 'mean': {'Glucose': 6.555296585341011e-17, 'BMI': 1.9665889756023034e-16, 'Age': 5.527014768032617e-17, 'Insulin': 3.534718746997604e-17, 'Pregnancies': -4.113127269233575e-17, 'SkinThickness': -7.133705107576983e-17, 'BloodPressure': 1.9280284074532385e-16}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:32] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 57.0, 'BMI': 18.200000762939453, 'Age': 21.0, 'Insulin': 14.0, 'Pregnancies': 0.0, 'SkinThickness': 10.0, 'BloodPressure': 50.0}, 'max': {'Glucose': 194.0, 'BMI': 59.400001525878906, 'Age': 68.0, 'Insulin': 680.0, 'Pregnancies': 11.0, 'SkinThickness': 63.0, 'BloodPressure': 104.0}, 'mean': {'Glucose': 122.01298522949219, 'BMI': 33.27143096923828, 'Age': 31.714284896850586, 'Insulin': 155.50650024414062, 'Pregnancies': 3.5714285373687744, 'SkinThickness': 30.233766555786133, 'BloodPressure': 74.2597427368164}}
+
+[2026-01-31 09:55:32] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.0434954166412354, 'BMI': -1.8909835815429688, 'Age': -0.9190182685852051, 'Insulin': -1.3404823541641235, 'Pregnancies': -1.111585259437561, 'SkinThickness': -2.2476933002471924, 'BloodPressure': -2.250596046447754}, 'max': {'Glucose': 2.2627038955688477, 'BMI': 3.2783024311065674, 'Age': 3.112408399581909, 'Insulin': 4.968494892120361, 'Pregnancies': 2.3120973110198975, 'SkinThickness': 3.639878034591675, 'BloodPressure': 2.759028196334839}, 'mean': {'Glucose': 1.161129414839479e-08, 'BMI': -1.2385380721013917e-08, 'Age': 0.0, 'Insulin': 3.483388244518437e-09, 'Pregnancies': -2.5157804728337396e-09, 'SkinThickness': -1.7416941222592186e-09, 'BloodPressure': -1.5481725901267396e-09}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:39] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (2764, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 43.991512696355805, 'BMI': 18.192215980183192, 'Age': 20.973843093566835, 'Insulin': 14.999213692878907, 'Pregnancies': -0.03686156622127602, 'SkinThickness': 6.992799679107361, 'BloodPressure': 23.990986745800075}, 'max': {'Glucose': 199.0, 'BMI': 67.1053196123297, 'Age': 81.0, 'Insulin': 846.0, 'Pregnancies': 17.016869287927577, 'SkinThickness': 99.01147358333178, 'BloodPressure': 122.01578906786864}, 'mean': {'Glucose': 121.59915388155602, 'BMI': 32.43873667824614, 'Age': 33.44825908874099, 'Insulin': 137.5196330734478, 'Pregnancies': 3.879301041195173, 'SkinThickness': 29.170267276718107, 'BloodPressure': 72.43882376032131}}
+
+[2026-01-31 09:55:39] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (2764, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.5920262628778783, 'BMI': -2.0940734959438774, 'Age': -1.0634404409868008, 'Insulin': -1.528817627805747, 'Pregnancies': -1.145785611442508, 'SkinThickness': -2.478710677173893, 'BloodPressure': -3.941806820298638}, 'max': {'Glucose': 2.585119491381157, 'BMI': 5.095586077172873, 'Age': 4.053772484733734, 'Insulin': 8.84046332348236, 'Pregnancies': 3.8437721247689827, 'SkinThickness': 7.80594732094472, 'BloodPressure': 4.033674814428249}, 'mean': {'Glucose': -8.00131789093094e-17, 'BMI': -4.524439996156933e-16, 'Age': -1.3046325557100248e-16, 'Insulin': 1.336766362500912e-16, 'Pregnancies': -1.0572022434201925e-16, 'SkinThickness': -8.740395447121349e-17, 'BloodPressure': 8.264815106616216e-16}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:39] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 57.0, 'BMI': 18.200000762939453, 'Age': 21.0, 'Insulin': 14.0, 'Pregnancies': 0.0, 'SkinThickness': 10.0, 'BloodPressure': 50.0}, 'max': {'Glucose': 194.0, 'BMI': 59.400001525878906, 'Age': 68.0, 'Insulin': 680.0, 'Pregnancies': 11.0, 'SkinThickness': 63.0, 'BloodPressure': 104.0}, 'mean': {'Glucose': 122.01298522949219, 'BMI': 33.27143096923828, 'Age': 31.714284896850586, 'Insulin': 155.50650024414062, 'Pregnancies': 3.5714285373687744, 'SkinThickness': 30.233766555786133, 'BloodPressure': 74.2597427368164}}
+
+[2026-01-31 09:55:39] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.0434954166412354, 'BMI': -1.8909835815429688, 'Age': -0.9190182685852051, 'Insulin': -1.3404823541641235, 'Pregnancies': -1.111585259437561, 'SkinThickness': -2.2476933002471924, 'BloodPressure': -2.250596046447754}, 'max': {'Glucose': 2.2627038955688477, 'BMI': 3.2783024311065674, 'Age': 3.112408399581909, 'Insulin': 4.968494892120361, 'Pregnancies': 2.3120973110198975, 'SkinThickness': 3.639878034591675, 'BloodPressure': 2.759028196334839}, 'mean': {'Glucose': 1.161129414839479e-08, 'BMI': -1.2385380721013917e-08, 'Age': 0.0, 'Insulin': 3.483388244518437e-09, 'Pregnancies': -2.5157804728337396e-09, 'SkinThickness': -1.7416941222592186e-09, 'BloodPressure': -1.5481725901267396e-09}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:45] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (2456, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 55.99998296575416, 'BMI': 18.189572117814894, 'Age': 20.97388403285325, 'Insulin': 14.988172635381657, 'Pregnancies': -0.028650992803238726, 'SkinThickness': 6.99411968609424, 'BloodPressure': 23.995839261620933}, 'max': {'Glucose': 199.00616146148238, 'BMI': 67.1143026851301, 'Age': 81.01337482489369, 'Insulin': 744.0, 'Pregnancies': 17.0, 'SkinThickness': 99.01047020190661, 'BloodPressure': 122.00153941139483}, 'mean': {'Glucose': 121.78776640723103, 'BMI': 32.39633124509817, 'Age': 33.30925968005625, 'Insulin': 137.06024756125365, 'Pregnancies': 3.8236689999300424, 'SkinThickness': 29.136321188766225, 'BloodPressure': 72.14353659838434}}
+
+[2026-01-31 09:55:45] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (2456, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.189766599313536, 'BMI': -2.091822342269966, 'Age': -1.055917931864239, 'Insulin': -1.5921710451160123, 'Pregnancies': -1.1570830377868921, 'SkinThickness': -2.500847516231559, 'BloodPressure': -3.93062420936603}, 'max': {'Glucose': 2.5702380213617544, 'BMI': 5.111920860055934, 'Age': 4.083510064533126, 'Insulin': 7.9162404714564545, 'Pregnancies': 3.9576434795670212, 'SkinThickness': 7.89192492838704, 'BloodPressure': 4.070248085110863}, 'mean': {'Glucose': 3.9743814464594364e-16, 'BMI': 6.278003813515543e-16, 'Age': -1.9456025643268214e-16, 'Insulin': -2.1698169862380908e-18, 'Pregnancies': -9.113231342199982e-17, 'SkinThickness': 1.0487448766817439e-16, 'BloodPressure': -1.262110213661823e-16}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:45] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 44.0, 'BMI': 18.200000762939453, 'Age': 21.0, 'Insulin': 14.0, 'Pregnancies': 0.0, 'SkinThickness': 10.0, 'BloodPressure': 48.0}, 'max': {'Glucose': 197.0, 'BMI': 59.400001525878906, 'Age': 68.0, 'Insulin': 846.0, 'Pregnancies': 15.0, 'SkinThickness': 63.0, 'BloodPressure': 106.0}, 'mean': {'Glucose': 121.59740447998047, 'BMI': 32.48896026611328, 'Age': 32.74026107788086, 'Insulin': 152.5, 'Pregnancies': 3.948051929473877, 'SkinThickness': 29.37013053894043, 'BloodPressure': 73.37013244628906}}
+
+[2026-01-31 09:55:45] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.41664981842041, 'BMI': -2.019763469696045, 'Age': -1.025303840637207, 'Insulin': -1.249060869216919, 'Pregnancies': -1.1028472185134888, 'SkinThickness': -2.313253402709961, 'BloodPressure': -2.244137763977051}, 'max': {'Glucose': 2.3482959270477295, 'BMI': 3.8039114475250244, 'Age': 3.0793139934539795, 'Insulin': 6.2543230056762695, 'Pregnancies': 3.0872466564178467, 'SkinThickness': 4.016204833984375, 'BloodPressure': 2.8863048553466797}, 'mean': {'Glucose': -2.322258829678958e-08, 'BMI': 6.192690360506958e-09, 'Age': -6.38621200366174e-09, 'Insulin': -3.096345180253479e-09, 'Pregnancies': -3.870431530828e-09, 'SkinThickness': -6.192690360506958e-09, 'BloodPressure': 5.805647074197395e-10}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:51] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (2456, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 56.0, 'BMI': 18.195075651389356, 'Age': 20.973585913877162, 'Insulin': 15.0, 'Pregnancies': -0.030125188720825303, 'SkinThickness': 6.990082186990527, 'BloodPressure': 24.0}, 'max': {'Glucose': 199.0, 'BMI': 67.10462496711914, 'Age': 81.0, 'Insulin': 744.0, 'Pregnancies': 17.01709734724476, 'SkinThickness': 99.00725547623044, 'BloodPressure': 122.0}, 'mean': {'Glucose': 121.2484466116967, 'BMI': 32.37218853011901, 'Age': 33.27450106988765, 'Insulin': 136.40603059717128, 'Pregnancies': 3.8689752992429476, 'SkinThickness': 28.818535219839468, 'BloodPressure': 71.97711994884098}}
+
+[2026-01-31 09:55:51] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (2456, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.2200764013875407, 'BMI': -2.0822800686366763, 'Age': -1.0432866849129276, 'Insulin': -1.6331931157958284, 'Pregnancies': -1.1512241779414831, 'SkinThickness': -2.4576684125085437, 'BloodPressure': -3.8906514384203694}, 'max': {'Glucose': 2.6454942272549373, 'BMI': 5.101367305642565, 'Age': 4.047778310240867, 'Insulin': 8.173550219431041, 'Pregnancies': 3.882032802927292, 'SkinThickness': 7.9025572920325615, 'BloodPressure': 4.056550089553116}, 'mean': {'Glucose': -1.5911991232412668e-17, 'BMI': 3.4427762848311044e-16, 'Age': 1.1138393862688867e-16, 'Insulin': 2.5603840437609475e-16, 'Pregnancies': -7.232723287460303e-17, 'SkinThickness': -8.679267944952364e-17, 'BloodPressure': 2.9726492711461845e-16}}
+------------------------------------------------------------
+
+[2026-01-31 09:55:51] 
+🔹 BEFORE NORMALIZATION
+mode: norm=Standard, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': 44.0, 'BMI': 18.200000762939453, 'Age': 21.0, 'Insulin': 14.0, 'Pregnancies': 0.0, 'SkinThickness': 10.0, 'BloodPressure': 48.0}, 'max': {'Glucose': 197.0, 'BMI': 59.400001525878906, 'Age': 68.0, 'Insulin': 846.0, 'Pregnancies': 15.0, 'SkinThickness': 63.0, 'BloodPressure': 106.0}, 'mean': {'Glucose': 121.59740447998047, 'BMI': 32.48896026611328, 'Age': 32.74026107788086, 'Insulin': 152.5, 'Pregnancies': 3.948051929473877, 'SkinThickness': 29.37013053894043, 'BloodPressure': 73.37013244628906}}
+
+[2026-01-31 09:55:51] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['Glucose', 'BMI', 'Age', 'Insulin', 'Pregnancies', 'SkinThickness', 'BloodPressure'], 'min': {'Glucose': -2.41664981842041, 'BMI': -2.019763469696045, 'Age': -1.025303840637207, 'Insulin': -1.249060869216919, 'Pregnancies': -1.1028472185134888, 'SkinThickness': -2.313253402709961, 'BloodPressure': -2.244137763977051}, 'max': {'Glucose': 2.3482959270477295, 'BMI': 3.8039114475250244, 'Age': 3.0793139934539795, 'Insulin': 6.2543230056762695, 'Pregnancies': 3.0872466564178467, 'SkinThickness': 4.016204833984375, 'BloodPressure': 2.8863048553466797}, 'mean': {'Glucose': -2.322258829678958e-08, 'BMI': 6.192690360506958e-09, 'Age': -6.38621200366174e-09, 'Insulin': -3.096345180253479e-09, 'Pregnancies': -3.870431530828e-09, 'SkinThickness': -6.192690360506958e-09, 'BloodPressure': 5.805647074197395e-10}}
+------------------------------------------------------------
+

@@ -154,13 +154,10 @@ if __name__ == "__main__":
     config.set_aug_methods([ "gaussian_noise", "mixup"])
     # config.set_aug_methods(["CTGAN", "gaussian_noise", "mixup"])
     config.set_imbalance_methods([
-        "ADASYN",
-        "SMOTE",
-        "duplicate",
-        "BorderlineSMOTE",
-        "RandomOverSampler",
-        "RandomUnderSampler",
-        "TomekLinks"
+        "SMOTE",               # classic synthetic oversampling
+        "ADASYN",              # adaptive oversampling
+        "RandomUnderSampler",  # simple undersampling
+        "TomekLinks"  
     ])
 
     #config.set_imbalance_methods(["ADASYN", "SMOTE", "duplicate", "BorderlineSMOTE", "SMOTETomek", "SMOTEENN", "RandomOverSampler", "RandomUnderSampler", "TomekLinks"])
@@ -191,7 +188,7 @@ if __name__ == "__main__":
     # ------------------------------
     # Run full iterative pipelines
     # ------------------------------
-    #itkit.run_iter()
+    itkit.run_iter()
     #itkit.run_iter(start_group_idx=800)
 
     # ------------------------------
