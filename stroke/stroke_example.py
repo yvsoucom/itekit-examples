@@ -188,7 +188,7 @@ if __name__ == "__main__":
     # ------------------------------
     # Run full iterative pipelines
     # ------------------------------
-    itkit.run_iter()
+    itkit.run_iter(2800)
     #itkit.run_iter(start_group_idx=800)
 
     # ------------------------------
