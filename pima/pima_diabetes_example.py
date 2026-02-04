@@ -172,7 +172,7 @@ if __name__ == "__main__":
     # ------------------------------
     # Run full iterative pipelines
     # ------------------------------
-    itkit.run_iter()
+    #itkit.run_iter()
 
     # ------------------------------
     # Optional statistics & summary
