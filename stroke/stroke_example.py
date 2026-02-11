@@ -194,5 +194,9 @@ if __name__ == "__main__":
     # ------------------------------
     # Optional statistics & summary
     # ------------------------------
-    itkit.StatsManager().staticsanlysys()
+
+    datetimerunids = ["20260201-015833"] # specify which runs to analyze, or None for all
+    itkit.StatsManager(datetimerunids=datetimerunids).staticsanlysys()
+
+    #itkit.StatsManager().staticsanlysys()
  

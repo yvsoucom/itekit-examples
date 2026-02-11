@@ -268,7 +268,7 @@ if project_root not in sys.path:
 ### Import the IterKit framework
 import yvsoucom_iterkit as itkit
 from yvsoucom_iterkit import config
-
+//yvsoucom_iterkit now version is 0.3100 
 ### Step 1: Import the module that defines your TF models
 from mymodels.tensorflow.init import * # <- this executes decorators
 

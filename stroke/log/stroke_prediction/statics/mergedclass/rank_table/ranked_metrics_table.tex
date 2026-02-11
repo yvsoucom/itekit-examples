@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.9765 & \texttt{6/infgain/noAUG\_\_noIMB\_\_Standard/XGBmodel} & False & 0.1 & 0.5 \\
+ & M\_R & 0.7800 & \texttt{8/infgain/Standard\_\_mixup\_\_SMOTE/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_F1 & 0.6560 & \texttt{9/biMaxInfgain/noAUG\_\_SMOTE\_\_MinMax/LogisticRegression} & False & 0.2 & 0.5 \\
+ & m\_P & 0.9537 & \texttt{8/infgain/MinMax\_\_mixup\_\_noIMB/GradientBoosting} & True & 0.1 & 0.35 \\
+ & m\_R & 0.9537 & \texttt{8/infgain/MinMax\_\_mixup\_\_noIMB/GradientBoosting} & True & 0.1 & 0.35 \\
+ & m\_F1 & 0.9537 & \texttt{8/infgain/MinMax\_\_mixup\_\_noIMB/GradientBoosting} & True & 0.1 & 0.35 \\
+ & W\_P & 0.9552 & \texttt{10/noSelect/noAUG\_\_TomekLinks\_\_Standard/XGBmodel} & False & 0.1 & 0.5 \\
+ & W\_R & 0.9537 & \texttt{8/infgain/MinMax\_\_mixup\_\_noIMB/GradientBoosting} & True & 0.1 & 0.35 \\
+ & W\_F1 & 0.9424 & \texttt{10/noSelect/noAUG\_\_noIMB\_\_MinMax/XGBmodel} & False & 0.1 & 0.35 \\
+ & Acc & 0.9537 & \texttt{8/infgain/MinMax\_\_mixup\_\_noIMB/GradientBoosting} & True & 0.1 & 0.35 \\
+\hline
+\multirow{10}{*}{2} & M\_P & 0.9765 & \texttt{9/infgain/MinMax\_\_noAUG\_\_TomekLinks/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_R & 0.7792 & \texttt{7/infgain/Standard\_\_mixup\_\_RandomUnderSampler/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_F1 & 0.6560 & \texttt{9/biMaxInfgain/noAUG\_\_SMOTE\_\_Standard/LogisticRegression} & False & 0.2 & 0.5 \\
+ & m\_P & 0.9534 & \texttt{9/infgain/MinMax\_\_mixup\_\_noIMB/LogisticRegression} & True & 0.2 & 0.35 \\
+ & m\_R & 0.9534 & \texttt{9/infgain/MinMax\_\_mixup\_\_noIMB/LogisticRegression} & True & 0.2 & 0.35 \\
+ & m\_F1 & 0.9534 & \texttt{7/infgain/mixup\_\_noIMB\_\_MinMax/LogisticRegression} & False & 0.2 & 0.35 \\
+ & W\_P & 0.9552 & \texttt{9/infgain/MinMax\_\_noAUG\_\_TomekLinks/LogisticRegression} & True & 0.2 & 0.5 \\
+ & W\_R & 0.9534 & \texttt{7/infgain/mixup\_\_noIMB\_\_MinMax/LogisticRegression} & False & 0.2 & 0.35 \\
+ & W\_F1 & 0.9424 & \texttt{10/noSelect/MinMax\_\_noAUG\_\_noIMB/XGBmodel} & True & 0.1 & 0.35 \\
+ & Acc & 0.9534 & \texttt{9/infgain/MinMax\_\_mixup\_\_noIMB/LogisticRegression} & True & 0.2 & 0.35 \\
+\hline
+\multirow{10}{*}{3} & M\_P & 0.9765 & \texttt{6/infgain/MinMax\_\_noAUG\_\_noIMB/XGBmodel} & True & 0.1 & 0.5 \\
+ & M\_R & 0.7786 & \texttt{6/infgain/MinMax\_\_mixup\_\_SMOTE/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_F1 & 0.6560 & \texttt{9/biMeanInfgain/noAUG\_\_SMOTE\_\_MinMax/LogisticRegression} & False & 0.2 & 0.5 \\
+ & m\_P & 0.9534 & \texttt{7/infgain/mixup\_\_noIMB\_\_MinMax/LogisticRegression} & False & 0.2 & 0.35 \\
+ & m\_R & 0.9534 & \texttt{7/infgain/mixup\_\_noIMB\_\_MinMax/LogisticRegression} & False & 0.2 & 0.35 \\
+ & m\_F1 & 0.9534 & \texttt{6/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & W\_P & 0.9552 & \texttt{6/infgain/noAUG\_\_noIMB\_\_Standard/XGBmodel} & False & 0.1 & 0.5 \\
+ & W\_R & 0.9534 & \texttt{7/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & W\_F1 & 0.9424 & \texttt{10/noSelect/Standard\_\_noAUG\_\_noIMB/XGBmodel} & True & 0.1 & 0.35 \\
+ & Acc & 0.9534 & \texttt{7/infgain/mixup\_\_noIMB\_\_MinMax/LogisticRegression} & False & 0.2 & 0.35 \\
+\hline
+\multirow{10}{*}{4} & M\_P & 0.9765 & \texttt{9/infgain/Standard\_\_noAUG\_\_TomekLinks/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_R & 0.7779 & \texttt{7/infgain/Standard\_\_mixup\_\_SMOTE/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_F1 & 0.6560 & \texttt{9/biMeanInfgain/noAUG\_\_SMOTE\_\_Standard/LogisticRegression} & False & 0.2 & 0.5 \\
+ & m\_P & 0.9534 & \texttt{6/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & m\_R & 0.9534 & \texttt{6/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & m\_F1 & 0.9534 & \texttt{9/infgain/MinMax\_\_mixup\_\_noIMB/LogisticRegression} & True & 0.2 & 0.35 \\
+ & W\_P & 0.9552 & \texttt{6/infgain/noAUG\_\_noIMB\_\_MinMax/XGBmodel} & False & 0.1 & 0.5 \\
+ & W\_R & 0.9534 & \texttt{9/infgain/MinMax\_\_mixup\_\_noIMB/LogisticRegression} & True & 0.2 & 0.35 \\
+ & W\_F1 & 0.9424 & \texttt{10/noSelect/noAUG\_\_noIMB\_\_Standard/XGBmodel} & False & 0.1 & 0.35 \\
+ & Acc & 0.9534 & \texttt{6/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+\hline
+\multirow{10}{*}{5} & M\_P & 0.9765 & \texttt{6/infgain/Standard\_\_noAUG\_\_noIMB/XGBmodel} & True & 0.1 & 0.5 \\
+ & M\_R & 0.7772 & \texttt{6/infgain/MinMax\_\_mixup\_\_ADASYN/LogisticRegression} & True & 0.2 & 0.5 \\
+ & M\_F1 & 0.6511 & \texttt{9/biMeanInfgain/noAUG\_\_ADASYN\_\_Standard/LogisticRegression} & False & 0.2 & 0.5 \\
+ & m\_P & 0.9534 & \texttt{7/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & m\_R & 0.9534 & \texttt{7/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & m\_F1 & 0.9534 & \texttt{7/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & W\_P & 0.9552 & \texttt{6/infgain/MinMax\_\_noAUG\_\_noIMB/XGBmodel} & True & 0.1 & 0.5 \\
+ & W\_R & 0.9534 & \texttt{6/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+ & W\_F1 & 0.9399 & \texttt{8/infgain/MinMax\_\_mixup\_\_noIMB/GradientBoosting} & True & 0.1 & 0.35 \\
+ & Acc & 0.9534 & \texttt{7/infgain/mixup\_\_TomekLinks\_\_Standard/LogisticRegression} & False & 0.2 & 0.35 \\
+\hline
+\end{tabular}
+\end{table*}
