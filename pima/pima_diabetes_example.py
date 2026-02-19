@@ -179,6 +179,6 @@ if __name__ == "__main__":
     # ------------------------------
     datetimerunids = ["20260203-063916"] # specify which runs to analyze, or None for all
     #datetimerunids = ["20260130-171105", "20260131-1030035"] # specify which runs to analyze, or None for all
-    itkit.StatsManager(datetimerunids=datetimerunids).staticsanlysys()
-    #itkit.StatsManager().staticsanlysys()#
+    #itkit.StatsManager(datetimerunids=datetimerunids).staticsanlysys()
+    itkit.StatsManager().staticsanlysys()#
  
