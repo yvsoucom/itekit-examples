@@ -302,7 +302,7 @@ if __name__ == "__main__":
    
     config.set_project("pimaindians_diabetes"). // project name
     config.set_class_names(['0', '1'])   // set class name   if category may be 0,1,2
-    config.set_norm_first_set([True, False])  // Whether to normalize before augmentation/imbalance
+    config.set_norm_order_set(["first", "last"])  // Whether to normalize before augmentation/imbalance
     config.set_splite_ratio_set([0.2,0.1])  // control splite_ratio scope for splite train and test to making experiment
     config.set_prob_threshold_set([0.5,0.35]) // control prob threshold scope to making experiments
     total_features = len(cols_to_normalize) + len(cols_bool) + len(cols_category)

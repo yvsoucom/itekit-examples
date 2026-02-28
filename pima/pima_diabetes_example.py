@@ -29,6 +29,7 @@ import numpy as np
 # Import the IterKit framework
 import yvsoucom_iterkit as itkit
 from yvsoucom_iterkit import config
+from  yvsoucom_iterkit.utils.convert_col_types import convert_column_types  
 
 # Step 1: Import the module that defines your TF models
 from mymodels.tensorflow.init import * # <- this executes decorators
@@ -82,7 +83,7 @@ def preprocess_dataset(df):
     label_column = "Outcome"
 
     # Use IterKit core function
-    df = itkit.DataPreparation().convert_column_types(df, cols_to_normalize, cols_bool, cols_category)
+    df = convert_column_types(df, cols_to_normalize, cols_bool, cols_category)
     return df, label_column, cols_to_normalize, cols_bool, cols_category
 
 # ------------------------------
@@ -98,9 +99,17 @@ if __name__ == "__main__":
     # ------------------------------
     config.set_project("pimaindians_diabetes")
     config.set_class_names(['0', '1'])
-    config.set_norm_first_set([True, False])  # Whether to normalize before augmentation/imbalance
-    config.set_splite_ratio_set([0.2,0.1])
+    config.set_norm_order_set(["first", "last"])  # Whether to normalize before augmentation/imbalance
+    config.set_split_ratio_set([0.2,0.1])
     config.set_prob_threshold_set([0.5,0.35])
+
+    #config.set_random_state_set([42, 2026, 7])
+    config.set_random_state_set([126, 5012, 23])
+
+    #config.set_random_state_set([42])
+
+    config.set_norm_mode(["MinMax", "Standard"])
+
     total_features = len(cols_to_normalize) + len(cols_bool) + len(cols_category)
     config.set_total_featurenum(total_features)
     config.set_df(df)
@@ -108,8 +117,10 @@ if __name__ == "__main__":
     config.set_feature_schema(numeric=cols_to_normalize, boolean=cols_bool, categorical=cols_category)
 
     #config.set_models(modelnames=["tf_NeuralNetworkB"]) 
+    
     config.set_models(modelnames=["sklearn_SVM", "random_forest", "XGBmodel", "DTmodel", "LogisticRegression","GradientBoosting"])
-    #config.set_models(modelnames=[ "random_forest", "XGBmodel",  "GradientBoosting"])
+    
+    #config.set_models(modelnames=[ "random_forest"])
     
     #config.set_models(modelnames=["sklearn_SVM", "random_forest", "XGBmodel", "DTmodel", "LogisticRegression","GradientBoosting","tf_NeuralNetworkA", "tf_NeuralNetworkB"] )
    
@@ -134,8 +145,9 @@ if __name__ == "__main__":
 
     #config.set_imbalance_methods(["ADASYN", "SMOTE", "RandomOverSampler", "RandomUnderSampler", "SMOTETomek", "TomekLinks", "duplicate", "ClusterCentroids", "KMeansSMOTE", "SVMSMOTE", "BorderlineSMOTE", "SMOTEENN"])
     
-    config.set_aug_imbalance_combination([0, 1, 2, 3]) # all combinations 0 both none ; 1 aug only; 2 imbalance only; 3 both
-    
+    config.set_aug_imbalance_combination(["none", "aug_only", "imbl_only", "both"]) # all combinations 0 both none ; 1 aug only; 2 imbalance only; 3 both
+ 
+ 
     #config.set_aug_imbalance_combination([0]) # all combinations 0 both none ; 1 aug only; 2 imbalance only; 3 both
   
     config.set_featureNumSet([4,5,6,7,8])
@@ -146,10 +158,10 @@ if __name__ == "__main__":
 
     
     # Instead of numbers
-    #config.set_ig_methodset(["chi2","PCA"])
+    #config.set_fs_methodset(["chi2","PCA"])
 
-    config.set_ig_methodset(["biMeanInfgain", "biMaxInfgain", "infgain"])
-    #config.set_ig_methodset(["biMeanInfgain", "biMaxInfgain", "infgain", "chi2","PCA"])
+    config.set_fs_methodset(["biMeanInfgain", "biMaxInfgain", "infgain"])
+    #config.set_fs_methodset(["biMeanInfgain", "biMaxInfgain", "infgain", "chi2","PCA"])
 
     
     config.set_weights_for_integrated_score({
@@ -172,13 +184,14 @@ if __name__ == "__main__":
     # ------------------------------
     # Run full iterative pipelines
     # ------------------------------
+    
     #itkit.run_iter()
 
     # ------------------------------
     # Optional statistics & summary
     # ------------------------------
-    datetimerunids = ["20260203-063916"] # specify which runs to analyze, or None for all
+    datetimerunids = ["20260222-075415"]  # specify which runs to analyze, or None for all
     #datetimerunids = ["20260130-171105", "20260131-1030035"] # specify which runs to analyze, or None for all
     #itkit.StatsManager(datetimerunids=datetimerunids).staticsanlysys()
-    itkit.StatsManager().staticsanlysys()#
+    itkit.StatsManager().staticsanlysys()
  

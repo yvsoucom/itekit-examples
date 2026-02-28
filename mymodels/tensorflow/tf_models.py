@@ -13,8 +13,8 @@ import numpy as np
 from tensorflow import keras
 from sklearn.utils.class_weight import compute_class_weight
 from yvsoucom_iterkit.config import config
-from yvsoucom_iterkit.log import  Logger
-from yvsoucom_iterkit.analysis.plot import Plotter  
+from yvsoucom_iterkit.log.log import  Logger
+from yvsoucom_iterkit.analysis.utils.plot import Plotter  
   
 from yvsoucom_iterkit.models.decorators import register_model_decorator
 from yvsoucom_iterkit.models.types import ModelType
@@ -24,7 +24,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
  
 
-def prepare_tf_dataset(X_train, y_train, X_test, y_test, batch_size=12, val_ratio=0.1):
+def prepare_tf_dataset(cfg, X_train, y_train, X_test, y_test, batch_size=12, val_ratio=None):
     """
     Prepares TensorFlow datasets with optional validation split.
 
@@ -37,7 +37,7 @@ def prepare_tf_dataset(X_train, y_train, X_test, y_test, batch_size=12, val_rati
     # Split training into train + validation
     # ------------------------
     X_train_split, X_val, y_train_split, y_val = train_test_split(
-        X_train, y_train, test_size=val_ratio, random_state=42, stratify=y_train
+        X_train, y_train, test_size=val_ratio, random_state=cfg.random_state, stratify=y_train
     )
 
     # ------------------------
@@ -137,7 +137,7 @@ def tf_neuralnet_modelA(cfg,model_input, gpu_id=None):
     max_batch_size=32
     train_samples = int(len(X_train) * (1 - val_ratio))
     batch_size = min(max_batch_size, int(train_samples // 2))
-    X_train, y_train, X_val, y_val, X_test, y_test, db_train, db_val, db_test = prepare_tf_dataset(X_train, y_train, X_test, y_test, batch_size, val_ratio)
+    X_train, y_train, X_val, y_val, X_test, y_test, db_train, db_val, db_test = prepare_tf_dataset(cfg, X_train, y_train, X_test, y_test, batch_size, val_ratio)
     modelnet = neuralnet_modelA(X_train.shape[1])
     return train_NeuralNetwork(cfg, modelnet,X_train, y_train, X_val, y_val, X_test, y_test, db_train, db_val, db_test,batch_size )
 
@@ -148,7 +148,7 @@ def tf_neuralnet_modelB(cfg,model_input, gpu_id=None):
     max_batch_size=32
     train_samples = int(len(X_train) * (1 - val_ratio))
     batch_size = min(max_batch_size, int(train_samples // 2))
-    X_train, y_train, X_val, y_val, X_test, y_test, db_train, db_val, db_test = prepare_tf_dataset(X_train, y_train, X_test, y_test, batch_size, val_ratio)
+    X_train, y_train, X_val, y_val, X_test, y_test, db_train, db_val, db_test = prepare_tf_dataset(cfg, X_train, y_train, X_test, y_test, batch_size, val_ratio)
     modelnet = neuralnet_modelB(X_train.shape[1])
     return train_NeuralNetwork(cfg, modelnet,X_train, y_train, X_val, y_val, X_test, y_test, db_train, db_val, db_test,batch_size )
 
