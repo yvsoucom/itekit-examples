@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llr}
+\toprule
+Model_A & Model_B & p_value \\
+\midrule
+DTmodel & GradientBoosting & 0.0312 \\
+DTmodel & LogisticRegression & 0.0312 \\
+DTmodel & XGBmodel & 0.0312 \\
+DTmodel & random_forest & 0.0312 \\
+DTmodel & sklearn_SVM & 0.0312 \\
+GradientBoosting & LogisticRegression & 0.0312 \\
+GradientBoosting & XGBmodel & 1.0000 \\
+GradientBoosting & random_forest & 0.0625 \\
+GradientBoosting & sklearn_SVM & 0.0312 \\
+LogisticRegression & XGBmodel & 0.0312 \\
+LogisticRegression & random_forest & 0.0312 \\
+LogisticRegression & sklearn_SVM & 0.4375 \\
+XGBmodel & random_forest & 0.0312 \\
+XGBmodel & sklearn_SVM & 0.0312 \\
+random_forest & sklearn_SVM & 0.0312 \\
+\bottomrule
+\end{tabular}
+\caption{Wilcoxon signed-rank test (Macro_Precision).}
+\label{tab:wilcoxon_Macro_Precision}
+\end{table}

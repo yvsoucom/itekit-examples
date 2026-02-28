@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llr}
+\toprule
+Model_A & Model_B & Cliffs_Delta \\
+\midrule
+DTmodel & GradientBoosting & -1.0000 \\
+DTmodel & LogisticRegression & -1.0000 \\
+DTmodel & XGBmodel & -1.0000 \\
+DTmodel & random_forest & -1.0000 \\
+DTmodel & sklearn_SVM & -1.0000 \\
+GradientBoosting & LogisticRegression & -0.6111 \\
+GradientBoosting & XGBmodel & 0.0556 \\
+GradientBoosting & random_forest & 0.2222 \\
+GradientBoosting & sklearn_SVM & -0.5000 \\
+LogisticRegression & XGBmodel & 0.5556 \\
+LogisticRegression & random_forest & 0.5000 \\
+LogisticRegression & sklearn_SVM & 0.0000 \\
+XGBmodel & random_forest & 0.2222 \\
+XGBmodel & sklearn_SVM & -0.5000 \\
+random_forest & sklearn_SVM & -0.6667 \\
+\bottomrule
+\end{tabular}
+\caption{Cliff's Delta effect sizes (Weighted_Precision).}
+\label{tab:cliffs_Weighted_Precision}
+\end{table}

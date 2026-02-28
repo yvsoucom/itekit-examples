@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.8293 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.8615 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_F1 & 0.8270 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_P & 0.8312 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.8312 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.8312 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.8726 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.8312 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.8350 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & Acc & 0.8312 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.8181 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.8444 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_F1 & 0.8236 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_P & 0.8312 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.8312 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.8312 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.8597 & \texttt{8/noSelect/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.35  & 42 \\ 
+ & W\_R & 0.8312 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.8345 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & Acc & 0.8312 & \texttt{7/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.8181 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.8444 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_F1 & 0.8236 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_P & 0.8312 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.8312 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.8312 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.8597 & \texttt{6/infgain/noAug\_\_ADASYN\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.8312 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.8345 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & Acc & 0.8312 & \texttt{4/biMaxInfgain/mixup\_\_ADASYN\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.8149 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.8430 & \texttt{7/infgain/noAug\_\_noImbl\_\_standard/random\_forest} & 0.1 & 0.35  & 42 \\ 
+ & M\_F1 & 0.8214 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_P & 0.8312 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.8312 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.8312 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.8597 & \texttt{7/infgain/noAug\_\_SMOTE\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.8312 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.8339 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & Acc & 0.8312 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.8149 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.8430 & \texttt{7/infgain/standard\_\_noAug\_\_noImbl/random\_forest} & 0.1 & 0.35  & 42 \\ 
+ & M\_F1 & 0.8214 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_P & 0.8312 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.8312 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.8312 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.8597 & \texttt{7/infgain/standard\_\_noAug\_\_ADASYN/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.8312 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.8339 & \texttt{8/noSelect/minmax\_\_mixup\_\_TomekLinks/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & Acc & 0.8312 & \texttt{6/infgain/standard\_\_mixup\_\_SMOTE/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\end{tabular}
+\end{table*}

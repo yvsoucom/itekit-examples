@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.8521 & \texttt{4/infgain/standard\_\_gaussian\_noise\_\_noImbl/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & M\_R & 0.8059 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & M\_F1 & 0.7840 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & m\_P & 0.7922 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_R & 0.7922 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_F1 & 0.7922 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & W\_P & 0.8369 & \texttt{6/biMeanInfgain/mixup\_\_SMOTE\_\_standard/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & W\_R & 0.7922 & \texttt{4/biMaxInfgain/mixup\_\_TomekLinks\_\_standard/DTmodel} & 0.1 & 0.35  & 2026 \\ 
+ & W\_F1 & 0.7966 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & Acc & 0.7922 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.8472 & \texttt{6/biMeanInfgain/minmax\_\_gaussian\_noise\_\_noImbl/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & M\_R & 0.8059 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & M\_F1 & 0.7840 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_P & 0.7922 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & m\_R & 0.7922 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & m\_F1 & 0.7922 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & W\_P & 0.8350 & \texttt{4/infgain/mixup\_\_RandomUnderSampler\_\_standard/LogisticRegression} & 0.1 & 0.35  & 2026 \\ 
+ & W\_R & 0.7922 & \texttt{4/biMaxInfgain/standard\_\_mixup\_\_SMOTE/XGBmodel} & 0.1 & 0.5  & 2026 \\ 
+ & W\_F1 & 0.7966 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & Acc & 0.7922 & \texttt{5/biMaxInfgain/standard\_\_mixup\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.8258 & \texttt{7/biMaxInfgain/standard\_\_gaussian\_noise\_\_noImbl/LogisticRegression} & 0.1 & 0.5  & 2026 \\ 
+ & M\_R & 0.8059 & \texttt{7/infgain/mixup\_\_SMOTE\_\_standard/random\_forest} & 0.1 & 0.5  & 2026 \\ 
+ & M\_F1 & 0.7840 & \texttt{7/infgain/mixup\_\_SMOTE\_\_standard/random\_forest} & 0.1 & 0.5  & 2026 \\ 
+ & m\_P & 0.7922 & \texttt{4/biMaxInfgain/mixup\_\_TomekLinks\_\_standard/DTmodel} & 0.1 & 0.35  & 2026 \\ 
+ & m\_R & 0.7922 & \texttt{4/biMaxInfgain/mixup\_\_TomekLinks\_\_standard/DTmodel} & 0.1 & 0.35  & 2026 \\ 
+ & m\_F1 & 0.7922 & \texttt{4/biMaxInfgain/mixup\_\_TomekLinks\_\_standard/DTmodel} & 0.1 & 0.35  & 2026 \\ 
+ & W\_P & 0.8317 & \texttt{6/biMaxInfgain/mixup\_\_ADASYN\_\_standard/GradientBoosting} & 0.1 & 0.35  & 2026 \\ 
+ & W\_R & 0.7922 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & W\_F1 & 0.7966 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & Acc & 0.7922 & \texttt{4/biMaxInfgain/mixup\_\_TomekLinks\_\_standard/DTmodel} & 0.1 & 0.35  & 2026 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.8258 & \texttt{4/infgain/gaussian\_noise\_\_TomekLinks\_\_standard/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & M\_R & 0.8059 & \texttt{4/biMaxInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & M\_F1 & 0.7840 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_P & 0.7922 & \texttt{4/biMeanInfgain/minmax\_\_mixup\_\_TomekLinks/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_R & 0.7922 & \texttt{4/biMeanInfgain/minmax\_\_mixup\_\_TomekLinks/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_F1 & 0.7922 & \texttt{4/biMeanInfgain/minmax\_\_mixup\_\_TomekLinks/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & W\_P & 0.8317 & \texttt{6/biMeanInfgain/mixup\_\_SMOTE\_\_standard/XGBmodel} & 0.1 & 0.35  & 2026 \\ 
+ & W\_R & 0.7922 & \texttt{7/infgain/mixup\_\_SMOTE\_\_standard/random\_forest} & 0.1 & 0.5  & 2026 \\ 
+ & W\_F1 & 0.7966 & \texttt{7/infgain/mixup\_\_SMOTE\_\_standard/random\_forest} & 0.1 & 0.5  & 2026 \\ 
+ & Acc & 0.7922 & \texttt{4/biMeanInfgain/minmax\_\_mixup\_\_TomekLinks/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.8157 & \texttt{5/infgain/standard\_\_gaussian\_noise\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 2026 \\ 
+ & M\_R & 0.8044 & \texttt{6/biMaxInfgain/gaussian\_noise\_\_SMOTE\_\_standard/sklearn\_SVM} & 0.1 & 0.5  & 2026 \\ 
+ & M\_F1 & 0.7787 & \texttt{4/biMaxInfgain/standard\_\_mixup\_\_SMOTE/XGBmodel} & 0.1 & 0.5  & 2026 \\ 
+ & m\_P & 0.7922 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_R & 0.7922 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & m\_F1 & 0.7922 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & W\_P & 0.8271 & \texttt{6/biMeanInfgain/mixup\_\_SMOTE\_\_standard/GradientBoosting} & 0.1 & 0.5  & 2026 \\ 
+ & W\_R & 0.7922 & \texttt{4/biMeanInfgain/minmax\_\_mixup\_\_TomekLinks/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+ & W\_F1 & 0.7950 & \texttt{4/biMaxInfgain/standard\_\_mixup\_\_SMOTE/XGBmodel} & 0.1 & 0.5  & 2026 \\ 
+ & Acc & 0.7922 & \texttt{4/biMeanInfgain/noAug\_\_TomekLinks\_\_minmax/sklearn\_SVM} & 0.1 & 0.35  & 2026 \\ 
+\hline
+\end{tabular}
+\end{table*}

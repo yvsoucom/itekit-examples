@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.8731 & \texttt{5/biMeanInfgain/minmax\_\_gaussian\_noise\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & M\_R & 0.8559 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.8468 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_P & 0.8571 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.8571 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.8571 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.8629 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_R & 0.8571 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.8587 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & Acc & 0.8571 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.8676 & \texttt{6/infgain/gaussian\_noise\_\_TomekLinks\_\_standard/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_R & 0.8559 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.8468 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_P & 0.8571 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.8571 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.8571 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.8629 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_R & 0.8571 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.8587 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & Acc & 0.8571 & \texttt{5/biMaxInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.8623 & \texttt{6/infgain/gaussian\_noise\_\_noImbl\_\_standard/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_R & 0.8474 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.8444 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_P & 0.8571 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.8571 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.8571 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.8586 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_R & 0.8571 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.8577 & \texttt{7/infgain/standard\_\_noAug\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & Acc & 0.8571 & \texttt{5/biMeanInfgain/standard\_\_noAug\_\_RandomUnderSampler/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.8521 & \texttt{4/infgain/gaussian\_noise\_\_TomekLinks\_\_standard/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_R & 0.8359 & \texttt{5/infgain/standard\_\_mixup\_\_ADASYN/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.8289 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & m\_P & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & W\_R & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+ & Acc & 0.8442 & \texttt{6/biMeanInfgain/standard\_\_mixup\_\_TomekLinks/XGBmodel} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.8521 & \texttt{6/biMaxInfgain/standard\_\_gaussian\_noise\_\_TomekLinks/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_R & 0.8344 & \texttt{5/biMaxInfgain/standard\_\_gaussian\_noise\_\_SMOTE/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.8214 & \texttt{5/infgain/standard\_\_mixup\_\_ADASYN/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & m\_P & 0.8312 & \texttt{5/biMeanInfgain/mixup\_\_SMOTE\_\_minmax/XGBmodel} & 0.1 & 0.35  & 5012 \\ 
+ & m\_R & 0.8312 & \texttt{5/biMeanInfgain/mixup\_\_SMOTE\_\_minmax/XGBmodel} & 0.1 & 0.35  & 5012 \\ 
+ & m\_F1 & 0.8312 & \texttt{5/biMeanInfgain/mixup\_\_SMOTE\_\_minmax/XGBmodel} & 0.1 & 0.35  & 5012 \\ 
+ & W\_P & 0.8437 & \texttt{5/infgain/standard\_\_mixup\_\_ADASYN/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & W\_R & 0.8312 & \texttt{5/biMeanInfgain/mixup\_\_SMOTE\_\_minmax/XGBmodel} & 0.1 & 0.35  & 5012 \\ 
+ & W\_F1 & 0.8339 & \texttt{5/infgain/standard\_\_mixup\_\_ADASYN/sklearn\_SVM} & 0.1 & 0.5  & 5012 \\ 
+ & Acc & 0.8312 & \texttt{5/biMeanInfgain/mixup\_\_SMOTE\_\_minmax/XGBmodel} & 0.1 & 0.35  & 5012 \\ 
+\hline
+\end{tabular}
+\end{table*}
