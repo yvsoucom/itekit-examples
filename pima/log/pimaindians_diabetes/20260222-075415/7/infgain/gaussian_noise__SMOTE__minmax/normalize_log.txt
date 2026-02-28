@@ -1,0 +1,216 @@
+[2026-02-22 23:14:28] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3600, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.06794923264192672, 'BMI': 18.19511537381854, 'Glucose': 43.99643235216704, 'Insulin': 14.0, 'Age': 20.97593791571981, 'SkinThickness': 6.995431567980404, 'Pregnancies': -0.02771639046715831}, 'max': {'DiabetesPedigreeFunction': 2.4349221721031937, 'BMI': 67.0999984741211, 'Glucose': 199.01895930317224, 'Insulin': 846.0127576881413, 'Age': 81.0180228749874, 'SkinThickness': 99.01288859998175, 'Pregnancies': 17.00418673255914}, 'mean': {'DiabetesPedigreeFunction': 0.4871409217355118, 'BMI': 32.68601224691529, 'Glucose': 123.9917207962577, 'Insulin': 144.33077898128246, 'Age': 33.68832200960144, 'SkinThickness': 29.298333987260346, 'Pregnancies': 3.9986953629145896}}
+
+[2026-02-22 23:14:28] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3600, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 0.9999999999999999, 'BMI': 1.0, 'Glucose': 0.9999999999999999, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.17710033017487511, 'BMI': 0.2963077703994574, 'Glucose': 0.516023638741053, 'Insulin': 0.1566451689315726, 'Age': 0.211724561239099, 'SkinThickness': 0.24237686128973937, 'Pregnancies': 0.23640410142647164}}
+------------------------------------------------------------
+
+[2026-02-22 23:14:28] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.08799999952316284, 'BMI': 19.299999237060547, 'Glucose': 56.0, 'Insulin': 15.0, 'Age': 21.0, 'SkinThickness': 8.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.781000018119812, 'BMI': 52.900001525878906, 'Glucose': 196.0, 'Insulin': 280.0, 'Age': 60.0, 'SkinThickness': 52.0, 'Pregnancies': 12.0}, 'mean': {'DiabetesPedigreeFunction': 0.46649348735809326, 'BMI': 33.20649337768555, 'Glucose': 119.84415435791016, 'Insulin': 121.06493377685547, 'Age': 33.10389709472656, 'SkinThickness': 29.0, 'Pregnancies': 3.7402596473693848}}
+
+[2026-02-22 23:14:28] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.2235638052225113, 'BMI': 0.4138837158679962, 'Glucose': 0.4560296833515167, 'Insulin': 0.4002450406551361, 'Age': 0.3103562891483307, 'SkinThickness': 0.47727277874946594, 'Pregnancies': 0.31168830394744873}}
+------------------------------------------------------------
+
+[2026-02-22 23:14:38] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3626, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.055738151055810425, 'BMI': 18.199709602572867, 'Glucose': 43.993367361548884, 'Insulin': 14.0, 'Age': 20.9739258296441, 'SkinThickness': 6.986470332068755, 'Pregnancies': -0.022074991584069576}, 'max': {'DiabetesPedigreeFunction': 2.4200000762939453, 'BMI': 67.10499311459624, 'Glucose': 199.00766342597606, 'Insulin': 744.0, 'Age': 81.0031180590513, 'SkinThickness': 99.00002588989969, 'Pregnancies': 17.0}, 'mean': {'DiabetesPedigreeFunction': 0.4838211040398247, 'BMI': 32.936427380207995, 'Glucose': 122.96176288129709, 'Insulin': 141.78999024804165, 'Age': 33.694011551566284, 'SkinThickness': 29.48664604668004, 'Pregnancies': 3.94817542063447}}
+
+[2026-02-22 23:14:38] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3626, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.1810640980232749, 'BMI': 0.30133181364774436, 'Glucose': 0.5094265337109765, 'Insulin': 0.17505478116170084, 'Age': 0.21189833228658456, 'SkinThickness': 0.2445310973823832, 'Pregnancies': 0.23324127135977732}}
+------------------------------------------------------------
+
+[2026-02-22 23:14:38] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.10000000149011612, 'BMI': 18.200000762939453, 'Glucose': 61.0, 'Insulin': 23.0, 'Age': 21.0, 'SkinThickness': 11.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.3179999589920044, 'BMI': 49.70000076293945, 'Glucose': 193.0, 'Insulin': 846.0, 'Age': 72.0, 'SkinThickness': 51.0, 'Pregnancies': 15.0}, 'mean': {'DiabetesPedigreeFunction': 0.4356103837490082, 'BMI': 31.416881561279297, 'Glucose': 123.33766174316406, 'Insulin': 137.42857360839844, 'Age': 32.77922058105469, 'SkinThickness': 28.298702239990234, 'Pregnancies': 3.8181817531585693}}
+
+[2026-02-22 23:14:38] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.2755422294139862, 'BMI': 0.41958361864089966, 'Glucose': 0.47225502133369446, 'Insulin': 0.13903836905956268, 'Age': 0.23096510767936707, 'SkinThickness': 0.432467520236969, 'Pregnancies': 0.2545454502105713}}
+------------------------------------------------------------
+
+[2026-02-22 23:14:51] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3616, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.06690233900859463, 'BMI': 18.183680983823294, 'Glucose': 43.996237084355215, 'Insulin': 13.99901353044437, 'Age': 20.977101923474258, 'SkinThickness': 7.0, 'Pregnancies': -0.020276644115370314}, 'max': {'DiabetesPedigreeFunction': 2.436447443138344, 'BMI': 67.10063012787543, 'Glucose': 199.00656610056575, 'Insulin': 846.0177629537145, 'Age': 81.01497582718537, 'SkinThickness': 99.0, 'Pregnancies': 17.013552895760775}, 'mean': {'DiabetesPedigreeFunction': 0.4813455901726401, 'BMI': 32.77807328720142, 'Glucose': 124.08721984910053, 'Insulin': 143.5660160925352, 'Age': 33.503916666468704, 'SkinThickness': 29.49179935015552, 'Pregnancies': 3.9047050798800194}}
+
+[2026-02-22 23:14:51] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3616, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 0.9999999999999999, 'Glucose': 1.0, 'Insulin': 0.9999999999999999, 'Age': 0.9999999999999999, 'SkinThickness': 0.9999999999999999, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.1749041410698345, 'BMI': 0.29835041961427555, 'Glucose': 0.5166815867887723, 'Insulin': 0.1557260610435795, 'Age': 0.2086485401379299, 'SkinThickness': 0.2444760798929948, 'Pregnancies': 0.2304227428604366}}
+------------------------------------------------------------
+
+[2026-02-22 23:14:51] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.08399999886751175, 'BMI': 19.100000381469727, 'Glucose': 57.0, 'Insulin': 16.0, 'Age': 21.0, 'SkinThickness': 7.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.3289999961853027, 'BMI': 57.29999923706055, 'Glucose': 198.0, 'Insulin': 744.0, 'Age': 68.0, 'SkinThickness': 60.0, 'Pregnancies': 14.0}, 'mean': {'DiabetesPedigreeFunction': 0.49036362767219543, 'BMI': 31.93766212463379, 'Glucose': 116.35064697265625, 'Insulin': 140.2857208251953, 'Age': 34.03895950317383, 'SkinThickness': 28.298702239990234, 'Pregnancies': 4.337662220001221}}
+
+[2026-02-22 23:14:51] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0000001192092896, 'BMI': 0.9999999403953552, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0000001192092896, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.18100830912590027, 'BMI': 0.3360644578933716, 'Glucose': 0.42092663049697876, 'Insulin': 0.1707221120595932, 'Age': 0.27742472290992737, 'SkinThickness': 0.4018622934818268, 'Pregnancies': 0.3098330497741699}}
+------------------------------------------------------------
+
+[2026-02-22 23:15:02] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3604, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.06913493603831003, 'BMI': 18.195280361973268, 'Glucose': 43.97453626239194, 'Insulin': 14.0, 'Age': 20.97887135247758, 'SkinThickness': 6.990739802056779, 'Pregnancies': -0.034415386393649904}, 'max': {'DiabetesPedigreeFunction': 2.4200000762939453, 'BMI': 67.0999984741211, 'Glucose': 199.0, 'Insulin': 846.0124280008307, 'Age': 81.00831502665915, 'SkinThickness': 99.003270795025, 'Pregnancies': 17.010534543429603}, 'mean': {'DiabetesPedigreeFunction': 0.4843582665868352, 'BMI': 32.5368563160923, 'Glucose': 123.98482026679444, 'Insulin': 146.48173393752262, 'Age': 33.86500392663088, 'SkinThickness': 29.26678913991187, 'Pregnancies': 3.945773153054244}}
+
+[2026-02-22 23:15:02] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3604, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 0.9999999999999999, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.17662575510536235, 'BMI': 0.2932554671152804, 'Glucose': 0.5161105929012137, 'Insulin': 0.15923047478491556, 'Age': 0.2146635348495754, 'SkinThickness': 0.24209799575622445, 'Pregnancies': 0.23351130721034424}}
+------------------------------------------------------------
+
+[2026-02-22 23:15:02] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.08799999952316284, 'BMI': 19.299999237060547, 'Glucose': 56.0, 'Insulin': 15.0, 'Age': 21.0, 'SkinThickness': 8.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.781000018119812, 'BMI': 52.900001525878906, 'Glucose': 196.0, 'Insulin': 280.0, 'Age': 60.0, 'SkinThickness': 52.0, 'Pregnancies': 12.0}, 'mean': {'DiabetesPedigreeFunction': 0.46649348735809326, 'BMI': 33.20649337768555, 'Glucose': 119.84415435791016, 'Insulin': 121.06493377685547, 'Age': 33.10389709472656, 'SkinThickness': 29.0, 'Pregnancies': 3.7402596473693848}}
+
+[2026-02-22 23:15:02] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.2235638052225113, 'BMI': 0.4138837158679962, 'Glucose': 0.4560296833515167, 'Insulin': 0.4002450406551361, 'Age': 0.3103562891483307, 'SkinThickness': 0.47727277874946594, 'Pregnancies': 0.31168830394744873}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:06] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3618, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.07800000160932541, 'BMI': 18.189766321730623, 'Glucose': 43.98329392187944, 'Insulin': 14.0, 'Age': 20.970005219696112, 'SkinThickness': 6.991083781301846, 'Pregnancies': -0.02208792398334633}, 'max': {'DiabetesPedigreeFunction': 2.4200000762939453, 'BMI': 67.10601614294096, 'Glucose': 199.01501654373197, 'Insulin': 744.0, 'Age': 81.0, 'SkinThickness': 99.0, 'Pregnancies': 17.002172861076144}, 'mean': {'DiabetesPedigreeFunction': 0.4833685298880805, 'BMI': 32.97726873806258, 'Glucose': 123.28821196597815, 'Insulin': 140.75651001931928, 'Age': 33.57186180529052, 'SkinThickness': 29.492444971401866, 'Pregnancies': 4.07226022751981}}
+
+[2026-02-22 23:32:06] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3618, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 0.9999999999999999, 'SkinThickness': 1.0000000000000002, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.17308647111522535, 'BMI': 0.3023024551223879, 'Glucose': 0.5115399397163137, 'Insulin': 0.17363905482098532, 'Age': 0.20992599835656034, 'SkinThickness': 0.2445563116580572, 'Pregnancies': 0.2405007890325764}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:06] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.10000000149011612, 'BMI': 18.200000762939453, 'Glucose': 61.0, 'Insulin': 23.0, 'Age': 21.0, 'SkinThickness': 11.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.3179999589920044, 'BMI': 49.70000076293945, 'Glucose': 193.0, 'Insulin': 846.0, 'Age': 72.0, 'SkinThickness': 51.0, 'Pregnancies': 15.0}, 'mean': {'DiabetesPedigreeFunction': 0.4356103837490082, 'BMI': 31.416881561279297, 'Glucose': 123.33766174316406, 'Insulin': 137.42857360839844, 'Age': 32.77922058105469, 'SkinThickness': 28.298702239990234, 'Pregnancies': 3.8181817531585693}}
+
+[2026-02-22 23:32:06] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.2755422294139862, 'BMI': 0.41958361864089966, 'Glucose': 0.47225502133369446, 'Insulin': 0.13903836905956268, 'Age': 0.23096510767936707, 'SkinThickness': 0.432467520236969, 'Pregnancies': 0.2545454502105713}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:18] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3582, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.06554782873297284, 'BMI': 18.189105298726822, 'Glucose': 43.99969034419098, 'Insulin': 13.985107312875886, 'Age': 20.981524806742627, 'SkinThickness': 6.9913313584754295, 'Pregnancies': -0.0316253805505405}, 'max': {'DiabetesPedigreeFunction': 2.4200000762939453, 'BMI': 67.0999984741211, 'Glucose': 199.0, 'Insulin': 846.0, 'Age': 81.01269745510484, 'SkinThickness': 99.00702412879596, 'Pregnancies': 17.010982794664617}, 'mean': {'DiabetesPedigreeFunction': 0.47455024048288297, 'BMI': 33.057517665225845, 'Glucose': 125.08027839341689, 'Insulin': 145.02028191024263, 'Age': 33.516424141017694, 'SkinThickness': 29.63986789230665, 'Pregnancies': 3.806881059143912}}
+
+[2026-02-22 23:32:18] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3582, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 0.9999999999999998, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 0.9999999999999998, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.1737144646588626, 'BMI': 0.30398979452656794, 'Glucose': 0.523099523022064, 'Insulin': 0.15749138116286338, 'Age': 0.20880650470880063, 'SkinThickness': 0.24613776033142534, 'Pregnancies': 0.2252299882876344}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:18] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.08399999886751175, 'BMI': 19.100000381469727, 'Glucose': 57.0, 'Insulin': 16.0, 'Age': 21.0, 'SkinThickness': 7.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.3289999961853027, 'BMI': 57.29999923706055, 'Glucose': 198.0, 'Insulin': 744.0, 'Age': 68.0, 'SkinThickness': 60.0, 'Pregnancies': 14.0}, 'mean': {'DiabetesPedigreeFunction': 0.49036362767219543, 'BMI': 31.93766212463379, 'Glucose': 116.35064697265625, 'Insulin': 140.2857208251953, 'Age': 34.03895950317383, 'SkinThickness': 28.298702239990234, 'Pregnancies': 4.337662220001221}}
+
+[2026-02-22 23:32:18] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (77, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0000001192092896, 'BMI': 0.9999999403953552, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0000001192092896, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.18100830912590027, 'BMI': 0.3360644578933716, 'Glucose': 0.42092663049697876, 'Insulin': 0.1707221120595932, 'Age': 0.27742472290992737, 'SkinThickness': 0.4018622934818268, 'Pregnancies': 0.3098330497741699}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:28] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3172, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.07386255237498882, 'BMI': 18.18424019697369, 'Glucose': 43.99113488206787, 'Insulin': 13.9842627197875, 'Age': 20.976416104414017, 'SkinThickness': 6.998576552137108, 'Pregnancies': -0.027442816294155504}, 'max': {'DiabetesPedigreeFunction': 2.4258188238490077, 'BMI': 67.0999984741211, 'Glucose': 199.0, 'Insulin': 846.0204064504408, 'Age': 81.00760778844041, 'SkinThickness': 99.0, 'Pregnancies': 17.011331825684785}, 'mean': {'DiabetesPedigreeFunction': 0.48300083261007737, 'BMI': 32.842795309918145, 'Glucose': 123.5517021967882, 'Insulin': 146.12371724200912, 'Age': 33.75058521776511, 'SkinThickness': 29.64484847400601, 'Pregnancies': 3.938828834940334}}
+
+[2026-02-22 23:32:28] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3172, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 0.9999999999999998, 'Insulin': 0.9999999999999999, 'Age': 0.9999999999999998, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.1739565846514116, 'BMI': 0.29966938322599157, 'Glucose': 0.5132646268598247, 'Insulin': 0.15881456054269413, 'Age': 0.21279219610678066, 'SkinThickness': 0.24615132106844548, 'Pregnancies': 0.23277916015525363}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:28] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.07800000160932541, 'BMI': 19.299999237060547, 'Glucose': 56.0, 'Insulin': 15.0, 'Age': 21.0, 'SkinThickness': 8.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.2880001068115234, 'BMI': 57.29999923706055, 'Glucose': 196.0, 'Insulin': 440.0, 'Age': 69.0, 'SkinThickness': 52.0, 'Pregnancies': 13.0}, 'mean': {'DiabetesPedigreeFunction': 0.4560389816761017, 'BMI': 33.06104278564453, 'Glucose': 120.70130157470703, 'Insulin': 127.2272720336914, 'Age': 32.70779037475586, 'SkinThickness': 28.759740829467773, 'Pregnancies': 3.701298713684082}}
+
+[2026-02-22 23:32:28] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 0.9999999403953552, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.17105835676193237, 'BMI': 0.3621326684951782, 'Glucose': 0.4621521234512329, 'Insulin': 0.26406413316726685, 'Age': 0.24391233921051025, 'SkinThickness': 0.47181224822998047, 'Pregnancies': 0.28471532464027405}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:40] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3174, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.05430788094069114, 'BMI': 18.19108080958031, 'Glucose': 43.99660880640373, 'Insulin': 14.983206421480253, 'Age': 20.973471209290366, 'SkinThickness': 6.99071472489441, 'Pregnancies': -0.02604791244439671}, 'max': {'DiabetesPedigreeFunction': 2.337255087561634, 'BMI': 67.0999984741211, 'Glucose': 199.00321215341197, 'Insulin': 744.0092007918432, 'Age': 81.008084743117, 'SkinThickness': 99.0, 'Pregnancies': 17.024093440904856}, 'mean': {'DiabetesPedigreeFunction': 0.49105675580151853, 'BMI': 32.78992533671671, 'Glucose': 123.61829309486487, 'Insulin': 144.14321944560533, 'Age': 33.18810696125812, 'SkinThickness': 29.377632144444807, 'Pregnancies': 3.853026491323779}}
+
+[2026-02-22 23:32:40] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3174, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0000000000000002, 'BMI': 1.0, 'Glucose': 0.9999999999999999, 'Insulin': 1.0000000000000002, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.1913092311526872, 'BMI': 0.29849044354789805, 'Glucose': 0.5136664023932882, 'Insulin': 0.17716791173636626, 'Age': 0.20345988810414167, 'SkinThickness': 0.24331150223169373, 'Pregnancies': 0.22750980906127136}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:40] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.09600000083446503, 'BMI': 18.200000762939453, 'Glucose': 57.0, 'Insulin': 14.0, 'Age': 21.0, 'SkinThickness': 10.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.4200000762939453, 'BMI': 59.400001525878906, 'Glucose': 197.0, 'Insulin': 846.0, 'Age': 72.0, 'SkinThickness': 63.0, 'Pregnancies': 15.0}, 'mean': {'DiabetesPedigreeFunction': 0.4520064890384674, 'BMI': 32.15519332885742, 'Glucose': 122.64286041259766, 'Insulin': 138.58441162109375, 'Age': 33.772727966308594, 'SkinThickness': 29.077922821044922, 'Pregnancies': 4.1298699378967285}}
+
+[2026-02-22 23:32:40] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 0.9999999403953552, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0000001192092896, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.15318694710731506, 'BMI': 0.33871832489967346, 'Glucose': 0.4688776135444641, 'Insulin': 0.14974088966846466, 'Age': 0.2504456341266632, 'SkinThickness': 0.35996076464653015, 'Pregnancies': 0.27532467246055603}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:50] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3158, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.06920560121234104, 'BMI': 18.184669177183515, 'Glucose': 43.9860223009508, 'Insulin': 13.987302777263864, 'Age': 20.977530555271986, 'SkinThickness': 6.988021730107019, 'Pregnancies': -0.020699961117263}, 'max': {'DiabetesPedigreeFunction': 2.434109587822574, 'BMI': 67.0999984741211, 'Glucose': 199.0, 'Insulin': 846.0, 'Age': 81.0, 'SkinThickness': 99.0, 'Pregnancies': 15.009367760352113}, 'mean': {'DiabetesPedigreeFunction': 0.4831285290583823, 'BMI': 32.75044361144355, 'Glucose': 123.51893290731167, 'Insulin': 141.95929264055556, 'Age': 33.19253479101519, 'SkinThickness': 29.284782639279975, 'Pregnancies': 3.8261736860892377}}
+
+[2026-02-22 23:32:50] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3158, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 0.9999999999999999, 'Insulin': 0.9999999999999999, 'Age': 0.9999999999999999, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.1750273711700843, 'BMI': 0.29777525049130055, 'Glucose': 0.5130692843762095, 'Insulin': 0.1538101405068252, 'Age': 0.20350719236887532, 'SkinThickness': 0.24232454652557586, 'Pregnancies': 0.255945197220337}}
+------------------------------------------------------------
+
+[2026-02-22 23:32:50] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.08399999886751175, 'BMI': 19.100000381469727, 'Glucose': 57.0, 'Insulin': 16.0, 'Age': 21.0, 'SkinThickness': 7.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.3289999961853027, 'BMI': 57.29999923706055, 'Glucose': 198.0, 'Insulin': 744.0, 'Age': 68.0, 'SkinThickness': 60.0, 'Pregnancies': 17.0}, 'mean': {'DiabetesPedigreeFunction': 0.446058452129364, 'BMI': 32.279869079589844, 'Glucose': 120.75325012207031, 'Insulin': 141.66233825683594, 'Age': 33.889610290527344, 'SkinThickness': 29.071428298950195, 'Pregnancies': 4.214285850524902}}
+
+[2026-02-22 23:32:50] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0000001192092896, 'BMI': 0.9999999403953552, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0000001192092896, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.16127325594425201, 'BMI': 0.3450227379798889, 'Glucose': 0.45215070247650146, 'Insulin': 0.17261311411857605, 'Age': 0.27424702048301697, 'SkinThickness': 0.41644206643104553, 'Pregnancies': 0.2478991597890854}}
+------------------------------------------------------------
+
+[2026-02-22 23:33:00] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3212, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.07076778356124633, 'BMI': 18.19411540647421, 'Glucose': 44.0, 'Insulin': 13.993046955903475, 'Age': 20.98013178381449, 'SkinThickness': 6.99698474537045, 'Pregnancies': -0.03062344067913835}, 'max': {'DiabetesPedigreeFunction': 2.436803717378857, 'BMI': 67.0999984741211, 'Glucose': 199.0, 'Insulin': 846.0, 'Age': 81.00002059103032, 'SkinThickness': 99.0, 'Pregnancies': 17.011831597981416}, 'mean': {'DiabetesPedigreeFunction': 0.48049538764725175, 'BMI': 32.64095638623058, 'Glucose': 123.90379173885445, 'Insulin': 148.46331751754428, 'Age': 33.89232243155264, 'SkinThickness': 29.36513807427909, 'Pregnancies': 3.9521971277876307}}
+
+[2026-02-22 23:33:00] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3212, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 0.9999999999999999, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 0.9999999999999999}, 'mean': {'DiabetesPedigreeFunction': 0.17317049087454386, 'BMI': 0.29540088172568973, 'Glucose': 0.5155083337990609, 'Insulin': 0.16162157067275595, 'Age': 0.21513186552564545, 'SkinThickness': 0.24312413312761608, 'Pregnancies': 0.23369993110920928}}
+------------------------------------------------------------
+
+[2026-02-22 23:33:00] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.07800000160932541, 'BMI': 19.299999237060547, 'Glucose': 56.0, 'Insulin': 15.0, 'Age': 21.0, 'SkinThickness': 8.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.2880001068115234, 'BMI': 57.29999923706055, 'Glucose': 196.0, 'Insulin': 440.0, 'Age': 69.0, 'SkinThickness': 52.0, 'Pregnancies': 13.0}, 'mean': {'DiabetesPedigreeFunction': 0.4560389816761017, 'BMI': 33.06104278564453, 'Glucose': 120.70130157470703, 'Insulin': 127.2272720336914, 'Age': 32.70779037475586, 'SkinThickness': 28.759740829467773, 'Pregnancies': 3.701298713684082}}
+
+[2026-02-22 23:33:00] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 0.9999999403953552, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.17105835676193237, 'BMI': 0.3621326684951782, 'Glucose': 0.4621521234512329, 'Insulin': 0.26406413316726685, 'Age': 0.24391233921051025, 'SkinThickness': 0.47181224822998047, 'Pregnancies': 0.28471532464027405}}
+------------------------------------------------------------
+
+[2026-02-22 23:33:12] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3160, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0603630315092731, 'BMI': 18.191247242100346, 'Glucose': 44.0, 'Insulin': 14.990602118703839, 'Age': 20.980463294506166, 'SkinThickness': 7.0, 'Pregnancies': -0.02548489759066576}, 'max': {'DiabetesPedigreeFunction': 2.340561645971677, 'BMI': 67.0999984741211, 'Glucose': 199.01413969985893, 'Insulin': 744.0103575313506, 'Age': 81.0, 'SkinThickness': 99.0, 'Pregnancies': 17.007962353026173}, 'mean': {'DiabetesPedigreeFunction': 0.49762192123258886, 'BMI': 32.93208511293748, 'Glucose': 124.10394968089493, 'Insulin': 146.32615051878201, 'Age': 33.36529498119486, 'SkinThickness': 29.504507530630942, 'Pregnancies': 3.851362250059483}}
+
+[2026-02-22 23:33:12] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3160, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0000000000000002, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 0.9999999999999999, 'Pregnancies': 1.0000000000000002}, 'mean': {'DiabetesPedigreeFunction': 0.19176350996354194, 'BMI': 0.30139468907941064, 'Glucose': 0.5167525351944898, 'Insulin': 0.18015362056373685, 'Age': 0.20634667254196015, 'SkinThickness': 0.24461421228946675, 'Pregnancies': 0.22760202856234843}}
+------------------------------------------------------------
+
+[2026-02-22 23:33:12] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.09600000083446503, 'BMI': 18.200000762939453, 'Glucose': 57.0, 'Insulin': 14.0, 'Age': 21.0, 'SkinThickness': 10.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.4200000762939453, 'BMI': 59.400001525878906, 'Glucose': 197.0, 'Insulin': 846.0, 'Age': 72.0, 'SkinThickness': 63.0, 'Pregnancies': 15.0}, 'mean': {'DiabetesPedigreeFunction': 0.4520064890384674, 'BMI': 32.15519332885742, 'Glucose': 122.64286041259766, 'Insulin': 138.58441162109375, 'Age': 33.772727966308594, 'SkinThickness': 29.077922821044922, 'Pregnancies': 4.1298699378967285}}
+
+[2026-02-22 23:33:12] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 0.9999999403953552, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0000001192092896, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.15318694710731506, 'BMI': 0.33871832489967346, 'Glucose': 0.4688776135444641, 'Insulin': 0.14974088966846466, 'Age': 0.2504456341266632, 'SkinThickness': 0.35996076464653015, 'Pregnancies': 0.27532467246055603}}
+------------------------------------------------------------
+
+[2026-02-22 23:33:23] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (3240, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0648802679697086, 'BMI': 18.18980315313955, 'Glucose': 43.99347087442894, 'Insulin': 13.989745299921797, 'Age': 20.981502394888224, 'SkinThickness': 6.99259473893178, 'Pregnancies': -0.026687470199095044}, 'max': {'DiabetesPedigreeFunction': 2.42183978916047, 'BMI': 67.0999984741211, 'Glucose': 199.00654090976758, 'Insulin': 846.0, 'Age': 81.01826046125075, 'SkinThickness': 99.01479545068158, 'Pregnancies': 15.0}, 'mean': {'DiabetesPedigreeFunction': 0.49056533362421423, 'BMI': 33.028347786925835, 'Glucose': 125.04897258677055, 'Insulin': 142.98567611267597, 'Age': 33.61001807454513, 'SkinThickness': 29.425710970098667, 'Pregnancies': 3.8756465923203236}}
+
+[2026-02-22 23:33:23] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (3240, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0, 'BMI': 1.0, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.18060771168418072, 'BMI': 0.3033834671157168, 'Glucose': 0.5228946287810649, 'Insulin': 0.15504127513338692, 'Age': 0.21034639588129983, 'SkinThickness': 0.24377939299057133, 'Pregnancies': 0.25969356654675374}}
+------------------------------------------------------------
+
+[2026-02-22 23:33:23] 
+🔹 BEFORE NORMALIZATION
+mode: norm=minmax, encodemode=onehot, normalize_bool=False
+{'title': 'before', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.08399999886751175, 'BMI': 19.100000381469727, 'Glucose': 57.0, 'Insulin': 16.0, 'Age': 21.0, 'SkinThickness': 7.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 2.3289999961853027, 'BMI': 57.29999923706055, 'Glucose': 198.0, 'Insulin': 744.0, 'Age': 68.0, 'SkinThickness': 60.0, 'Pregnancies': 17.0}, 'mean': {'DiabetesPedigreeFunction': 0.446058452129364, 'BMI': 32.279869079589844, 'Glucose': 120.75325012207031, 'Insulin': 141.66233825683594, 'Age': 33.889610290527344, 'SkinThickness': 29.071428298950195, 'Pregnancies': 4.214285850524902}}
+
+[2026-02-22 23:33:23] ✅ AFTER NORMALIZATION
+{'title': 'after', 'shape': (154, 7), 'numeric_cols': ['DiabetesPedigreeFunction', 'BMI', 'Glucose', 'Insulin', 'Age', 'SkinThickness', 'Pregnancies'], 'min': {'DiabetesPedigreeFunction': 0.0, 'BMI': 0.0, 'Glucose': 0.0, 'Insulin': 0.0, 'Age': 0.0, 'SkinThickness': 0.0, 'Pregnancies': 0.0}, 'max': {'DiabetesPedigreeFunction': 1.0000001192092896, 'BMI': 0.9999999403953552, 'Glucose': 1.0, 'Insulin': 1.0, 'Age': 1.0, 'SkinThickness': 1.0000001192092896, 'Pregnancies': 1.0}, 'mean': {'DiabetesPedigreeFunction': 0.16127325594425201, 'BMI': 0.3450227379798889, 'Glucose': 0.45215070247650146, 'Insulin': 0.17261311411857605, 'Age': 0.27424702048301697, 'SkinThickness': 0.41644206643104553, 'Pregnancies': 0.2478991597890854}}
+------------------------------------------------------------
+
