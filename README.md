@@ -97,7 +97,7 @@ Each feature ranking method is evaluated **independently**, ensuring methodologi
 
 ---
 
-## 4. Data Augmentation and Class Imbalance Handling
+## 4. Data Augmentation , Class Imbalance Handling and Normalization
 
 ### 4.1 Augmentation Methods
 
@@ -123,16 +123,33 @@ Imbalance handling methods may include:
 ### 4.3 Combination Modes
 
 Experiments are conducted under four explicit modes:
-
+["none", "aug_only", "imbl_only", "both"] 
 | Mode | Augmentation | Imbalance Handling |
-|----|----|----|
-| 0 | Disabled | Disabled |
-| 1 | Enabled | Disabled |
-| 2 | Disabled | Enabled |
-| 3 | Enabled | Enabled |
+|-----------|----------|----------|
+| none      | Disabled | Disabled |
+| aug_only  | Enabled  | Disabled |
+| imbl_only | Disabled | Enabled  |
+| both      | Enabled  | Enabled  |
 
 This design allows **direct attribution of performance gains**.
 
+---
+
+
+### 4.4 Normalization  Modes
+
+Two normalization strategies are evaluated in the experiments: MinMax scaling and Standard (Z-score) normalization. The configuration is specified as:
+
+ config.set_norm_mode(["MinMax", "Standard"])
+
+---
+
+### 4.5 Normalization  Order 
+ 
+The order of normalization relative to other preprocessing steps is also configurable. Specifically, normalization can be applied either before or after data augmentation and class-imbalance handling:
+ 
+config.set_norm_order_set(["first", "last"])  % "first": before augmentation/imbalance, "last": after
+ 
 ---
 
 ## 5. Model Evaluation Protocol
@@ -209,6 +226,17 @@ The integrated score is used **only for ranking**, not as a replacement for full
 
 ---
 
+### 6.4 Random State
+
+ 
+To ensure reproducibility, experiments are conducted with multiple random seeds. The configuration specifies the following values:
+ 
+eg. config.set_random_state_set([42, 2026, 7])
+ 
+These seeds control all stochastic processes in the pipeline, including data splitting, augmentation, and model initialization.
+---
+
+
 ## 7. Statistical Analysis and Reporting
 
 Post-experiment analysis includes:
@@ -217,7 +245,7 @@ Post-experiment analysis includes:
 - Metric distributions across experimental dimensions
 - Sensitivity analysis (feature count, augmentation, imbalance,...,model )
 - Performance variance across splits and thresholds
-
+- Cross-seed analysis to evaluate reproducibility
 All results are traceable to their **exact configuration tuple**.
 
 ---
@@ -268,7 +296,7 @@ if project_root not in sys.path:
 ### Import the IterKit framework
 import yvsoucom_iterkit as itkit
 from yvsoucom_iterkit import config
-//yvsoucom_iterkit now version is 0.3100 
+//yvsoucom_iterkit now version is 1.000 
 ### Step 1: Import the module that defines your TF models
 from mymodels.tensorflow.init import * # <- this executes decorators
 
@@ -294,33 +322,35 @@ def preprocess_dataset(df):
  
 if __name__ == "__main__":
     df = load_dataset()
- 
+    print(df)
     df, label_column, cols_to_normalize, cols_bool, cols_category = preprocess_dataset(df)
- 
+    print(label_column, cols_to_normalize, cols_bool, cols_category) 
+    ------------------------------
+    Configure IterKit
+    ------------------------------
+    config.set_project("pimaindians_diabetes")
+    config.set_class_names(['0', '1'])
+    config.set_norm_order_set(["first", "last"])  # Whether to normalize before augmentation/imbalance
+    config.set_split_ratio_set([0.2,0.1])
+    config.set_prob_threshold_set([0.5,0.35])
+
+    config.set_random_state_set([42, 2026, 7])
   
-    #### Configure IterKit
-   
-    config.set_project("pimaindians_diabetes"). // project name
-    config.set_class_names(['0', '1'])   // set class name   if category may be 0,1,2
-    config.set_norm_order_set(["first", "last"])  // Whether to normalize before augmentation/imbalance
-    config.set_splite_ratio_set([0.2,0.1])  // control splite_ratio scope for splite train and test to making experiment
-    config.set_prob_threshold_set([0.5,0.35]) // control prob threshold scope to making experiments
+    config.set_norm_mode(["MinMax", "Standard"])
+
     total_features = len(cols_to_normalize) + len(cols_bool) + len(cols_category)
     config.set_total_featurenum(total_features)
     config.set_df(df)
     config.set_label_column(label_column)
     config.set_feature_schema(numeric=cols_to_normalize, boolean=cols_bool, categorical=cols_category)
 
-    //config.set_models(modelnames=["tf_NeuralNetworkB"])  // control models to making experiment
-    config.set_models(modelnames=["sklearn_SVM", "random_forest", "XGBmodel", "DTmodel", "LogisticRegression","GradientBoosting"])
-     
     
-  
+    config.set_models(modelnames=["sklearn_SVM", "random_forest", "XGBmodel", "DTmodel", "LogisticRegression","GradientBoosting"])
+    
+    
     config.set_aug_methods(["gaussian_noise", "mixup"])
-   //config.set_aug_methods(["CTGAN", "gaussian_noise", "mixup"]) // control aug scope to make experiments
-
-    //config.set_imbalance_methods(["ADASYN", "SMOTE", "duplicate", "BorderlineSMOTE", "SMOTETomek", "SMOTEENN",   "TomekLinks"]). // control scope imblance mthords to make experiments
-
+    
+ 
   
     config.set_imbalance_methods([
         "SMOTE",               # classic synthetic oversampling
@@ -329,22 +359,15 @@ if __name__ == "__main__":
         "TomekLinks"           # cleans overlapping points
     ])
 
-    
-    
-    config.set_aug_imbalance_combination([0, 1, 2, 3]) // all combinations 0 both none ; 1 aug only; 2 imbalance only; 3 both
-    
-    //config.set_aug_imbalance_combination([0]) // control scope of aug-imbl to make experiments. 
+     
+    config.set_aug_imbalance_combination(["none", "aug_only", "imbl_only", "both"]) # all combinations 0 both none ; 1 aug only; 2 imbalance only; 3 both
+ 
   
     config.set_featureNumSet([4,5,6,7,8])
-    //config.set_featureNumSet([8]) //control scope of featurenum to filter  
-
-    // total_features-3  must not less than 1   set_featureNumSet  can be not continueours
-    
- 
-
-    config.set_ig_methodset(["biMeanInfgain", "biMaxInfgain", "infgain"])
-    //config.set_ig_methodset(["biMeanInfgain", "biMaxInfgain", "infgain", "chi2","PCA"]) // control scope of filter methods for feature selection
-
+   
+       
+    config.set_fs_methodset(["biMeanInfgain", "biMaxInfgain", "infgain"])
+   
     
     config.set_weights_for_integrated_score({
         "Accuracy": 0.10,
@@ -360,17 +383,22 @@ if __name__ == "__main__":
         "Micro_Precision": 0.05,
         "Micro_Recall": 0.05,
         "Micro_F1": 0.10
-    }). // set integrated score weights
+    })
 
-   
-    #### Run full iterative pipelines
+     
+    ------------------------------
+     Run full iterative pipelines
+    ------------------------------
     
-    // itkit.run_iter(). // if already  done , it can skip for analysis
+    itkit.run_iter()
 
-    
-    #### Optional statistics & summary
-  
+    ------------------------------
+     Optional statistics & summary
+    ------------------------------
+    datetimerunids = ["20260222-075415"]  # specify which runs to analyze, or None for all
+    %datetimerunids = ["20260130-171105", "20260131-1030035"] # specify which runs to analyze, or None for all
+    %itkit.StatsManager(datetimerunids=datetimerunids).staticsanlysys()
     itkit.StatsManager().staticsanlysys()
- 
+  
 
 *End of document.*
