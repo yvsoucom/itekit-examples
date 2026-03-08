@@ -185,12 +185,12 @@ if __name__ == "__main__":
     # Run full iterative pipelines
     # ------------------------------
     
-    #itkit.run_iter()
+    itkit.run_iter()
 
     # ------------------------------
     # Optional statistics & summary
     # ------------------------------
-    datetimerunids = ["20260222-075415"]  # specify which runs to analyze, or None for all
+    datetimerunids = ["20260220-191939"]  # specify which runs to analyze, or None for all
     #datetimerunids = ["20260130-171105", "20260131-1030035"] # specify which runs to analyze, or None for all
     #itkit.StatsManager(datetimerunids=datetimerunids).staticsanlysys()
     itkit.StatsManager().staticsanlysys()
