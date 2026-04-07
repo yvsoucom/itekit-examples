@@ -2,13 +2,15 @@ Cluster,Part
 1,AugName:gaussian_noise
 4,AugName:mixup
 4,AugName:noAug
-4,Model:sklearn_SVM
 7,FS_Method:biMaxInfgain
 7,FS_Method:biMeanInfgain
 7,FS_Method:infgain
+7,FeatureNum:4.0
+7,FeatureNum:5.0
 7,FeatureNum:6.0
 7,Model:XGBmodel
-7,Random_State:7.0
+7,Norm_Order:first
+7,Scaler:standard
 7,Split_Ratio:0.1
 7,Split_Ratio:0.2
 10,FS_Method:noSelect
@@ -18,10 +20,6 @@ Cluster,Part
 10,Model:random_forest
 10,Norm_Order:last
 10,Scaler:minmax
-6,FeatureNum:4.0
-6,FeatureNum:5.0
-6,Norm_Order:first
-6,Scaler:standard
 8,ImblName:ADASYN
 8,Prob_Threshold:0.35
 9,ImblName:RandomUnderSampler
@@ -30,4 +28,5 @@ Cluster,Part
 3,ImblName:noImbl
 3,Prob_Threshold:0.5
 2,Model:DTmodel
-5,Model:LogisticRegression
+6,Model:LogisticRegression
+5,Model:sklearn_SVM
