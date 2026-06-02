@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.8088 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.5  & 126 \\ 
+ & M\_R & 0.8224 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & M\_F1 & 0.8127 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_P & 0.8247 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_R & 0.8247 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_F1 & 0.8247 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_P & 0.8325 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_R & 0.8247 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_F1 & 0.8268 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & Acc & 0.8247 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.8088 & \texttt{6/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.5  & 126 \\ 
+ & M\_R & 0.8224 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & M\_F1 & 0.8127 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_P & 0.8247 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_R & 0.8247 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_F1 & 0.8247 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_P & 0.8325 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_R & 0.8247 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_F1 & 0.8268 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & Acc & 0.8247 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.8088 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.5  & 126 \\ 
+ & M\_R & 0.8081 & \texttt{8/noSelect/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & M\_F1 & 0.7988 & \texttt{8/noSelect/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_P & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+ & m\_R & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+ & m\_F1 & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+ & W\_P & 0.8197 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_R & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+ & W\_F1 & 0.8140 & \texttt{8/noSelect/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & Acc & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.8069 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & M\_R & 0.8081 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & M\_F1 & 0.7988 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_P & 0.8117 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_R & 0.8117 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & m\_F1 & 0.8117 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_P & 0.8197 & \texttt{8/noSelect/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_R & 0.8117 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & W\_F1 & 0.8140 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & Acc & 0.8117 & \texttt{8/noSelect/minmax\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.8069 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBmodel} & 0.2 & 0.35  & 126 \\ 
+ & M\_R & 0.7994 & \texttt{8/noSelect/standard\_\_noAug\_\_noImbl/GradientBoosting} & 0.2 & 0.35  & 126 \\ 
+ & M\_F1 & 0.7895 & \texttt{7/infgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+ & m\_P & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 126 \\ 
+ & m\_R & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 126 \\ 
+ & m\_F1 & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 126 \\ 
+ & W\_P & 0.8173 & \texttt{8/noSelect/standard\_\_noAug\_\_noImbl/GradientBoosting} & 0.2 & 0.35  & 126 \\ 
+ & W\_R & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 126 \\ 
+ & W\_F1 & 0.8083 & \texttt{5/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.35  & 126 \\ 
+ & Acc & 0.8117 & \texttt{5/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 126 \\ 
+\hline
+\end{tabular}
+\end{table*}

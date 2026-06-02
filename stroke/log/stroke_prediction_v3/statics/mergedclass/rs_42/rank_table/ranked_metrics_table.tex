@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.9774 & \texttt{8/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.7931 & \texttt{7/infgain/gaussian\_noise\_\_noImbl\_\_standard/BalancedRandomForest} & 0.1 & 0.5  & 42 \\ 
+ & M\_F1 & 0.6472 & \texttt{9/infgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.35  & 42 \\ 
+ & m\_P & 0.9550 & \texttt{6/infgain/mixup\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.9550 & \texttt{6/infgain/mixup\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.9550 & \texttt{6/infgain/mixup\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.9570 & \texttt{8/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.9550 & \texttt{6/infgain/mixup\_\_noImbl\_\_minmax/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & W\_F1 & 0.9424 & \texttt{10/noSelect/noAug\_\_noImbl\_\_standard/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & Acc & 0.9550 & \texttt{6/infgain/mixup\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.9774 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.7931 & \texttt{7/infgain/standard\_\_gaussian\_noise\_\_noImbl/BalancedRandomForest} & 0.1 & 0.5  & 42 \\ 
+ & M\_F1 & 0.6388 & \texttt{6/infgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.2 & 0.35  & 42 \\ 
+ & m\_P & 0.9550 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.9550 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.9550 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.9570 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.9550 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.9424 & \texttt{10/noSelect/standard\_\_noAug\_\_noImbl/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & Acc & 0.9550 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.9774 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.7925 & \texttt{8/infgain/standard\_\_mixup\_\_noImbl/BalancedRandomForest} & 0.2 & 0.5  & 42 \\ 
+ & M\_F1 & 0.6349 & \texttt{10/noSelect/noAug\_\_noImbl\_\_standard/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & m\_P & 0.9550 & \texttt{7/infgain/gaussian\_noise\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.9550 & \texttt{7/infgain/gaussian\_noise\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.9550 & \texttt{7/infgain/gaussian\_noise\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.9570 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.9550 & \texttt{8/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.9416 & \texttt{6/infgain/mixup\_\_noImbl\_\_minmax/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & Acc & 0.9550 & \texttt{7/infgain/gaussian\_noise\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.9765 & \texttt{9/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.7920 & \texttt{8/infgain/standard\_\_noAug\_\_noImbl/BalancedRandomForest} & 0.2 & 0.5  & 42 \\ 
+ & M\_F1 & 0.6349 & \texttt{10/noSelect/standard\_\_noAug\_\_noImbl/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & m\_P & 0.9550 & \texttt{7/infgain/minmax\_\_mixup\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.9550 & \texttt{7/infgain/minmax\_\_mixup\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.9550 & \texttt{7/infgain/minmax\_\_mixup\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.9552 & \texttt{8/biMaxInfgain/standard\_\_noAug\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & W\_R & 0.9550 & \texttt{7/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.9403 & \texttt{9/biMaxInfgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBmodel} & 0.1 & 0.35  & 42 \\ 
+ & Acc & 0.9550 & \texttt{7/infgain/minmax\_\_mixup\_\_noImbl/random\_forest} & 0.1 & 0.5  & 42 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.9765 & \texttt{9/infgain/mixup\_\_noImbl\_\_standard/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & M\_R & 0.7920 & \texttt{8/infgain/noAug\_\_noImbl\_\_standard/BalancedRandomForest} & 0.2 & 0.5  & 42 \\ 
+ & M\_F1 & 0.6321 & \texttt{9/infgain/gaussian\_noise\_\_noImbl\_\_minmax/BalancedRandomForest} & 0.2 & 0.5  & 42 \\ 
+ & m\_P & 0.9550 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & m\_R & 0.9550 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & m\_F1 & 0.9550 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+ & W\_P & 0.9552 & \texttt{10/noSelect/minmax\_\_gaussian\_noise\_\_noImbl/LogisticRegression} & 0.1 & 0.35  & 42 \\ 
+ & W\_R & 0.9550 & \texttt{7/infgain/gaussian\_noise\_\_noImbl\_\_minmax/random\_forest} & 0.1 & 0.5  & 42 \\ 
+ & W\_F1 & 0.9398 & \texttt{10/noSelect/minmax\_\_gaussian\_noise\_\_noImbl/XGBmodel} & 0.2 & 0.35  & 42 \\ 
+ & Acc & 0.9550 & \texttt{8/biMaxInfgain/standard\_\_mixup\_\_noImbl/XGBmodel} & 0.1 & 0.5  & 42 \\ 
+\hline
+\end{tabular}
+\end{table*}

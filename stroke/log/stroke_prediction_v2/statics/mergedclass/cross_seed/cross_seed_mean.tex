@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+Model & Accuracy & Macro_Precision & Macro_Recall & Macro_F1 & Weighted_Precision & Weighted_Recall & Weighted_F1 & Micro_Precision & Micro_Recall & Micro_F1 & Integrated_Score \\
+\midrule
+DTmodel & 0.9152 & 0.5523 & 0.5545 & 0.5525 & 0.9169 & 0.9152 & 0.9159 & 0.9152 & 0.9152 & 0.9152 & 0.7887 \\
+GradientBoosting & 0.9443 & 0.6027 & 0.5386 & 0.5482 & 0.9203 & 0.9443 & 0.9298 & 0.9443 & 0.9443 & 0.9443 & 0.8056 \\
+LogisticRegression & 0.9470 & 0.6407 & 0.5323 & 0.5386 & 0.9235 & 0.9470 & 0.9302 & 0.9470 & 0.9470 & 0.9470 & 0.8088 \\
+XGBmodel & 0.9455 & 0.6306 & 0.5390 & 0.5498 & 0.9231 & 0.9455 & 0.9306 & 0.9455 & 0.9455 & 0.9455 & 0.8095 \\
+random_forest & 0.9328 & 0.6020 & 0.5563 & 0.5614 & 0.9218 & 0.9328 & 0.9254 & 0.9328 & 0.9328 & 0.9328 & 0.8042 \\
+sklearn_SVM & 0.9489 & 0.5333 & 0.5053 & 0.4988 & 0.9107 & 0.9489 & 0.9273 & 0.9489 & 0.9489 & 0.9489 & 0.7884 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-seed mean performance across metrics.}
+\label{tab:cross_seed_mean}
+\end{table}

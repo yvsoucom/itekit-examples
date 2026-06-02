@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.7723 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7306 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.7362 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_P & 0.7727 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_R & 0.7727 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.7727 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_P & 0.7725 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_R & 0.7727 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.7628 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.7727 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.7500 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7306 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.7362 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_P & 0.7662 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_R & 0.7662 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.7662 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_P & 0.7618 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_R & 0.7662 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.7628 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.7662 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.7500 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7291 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/GradientBoosting} & 0.2 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.7306 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_P & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_R & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_P & 0.7618 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_R & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.7599 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.7500 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7291 & \texttt{5/infgain/minmax\_\_noAug\_\_noImbl/GradientBoosting} & 0.2 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.7306 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & m\_P & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & m\_R & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & W\_P & 0.7607 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & W\_R & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.7599 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.7662 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.7500 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7220 & \texttt{4/biMaxInfgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & M\_F1 & 0.7291 & \texttt{5/infgain/noAug\_\_noImbl\_\_minmax/GradientBoosting} & 0.2 & 0.5  & 5012 \\ 
+ & m\_P & 0.7662 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & m\_R & 0.7662 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.7662 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & W\_P & 0.7607 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & W\_R & 0.7662 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.7583 & \texttt{6/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.7662 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 5012 \\ 
+\hline
+\end{tabular}
+\end{table*}

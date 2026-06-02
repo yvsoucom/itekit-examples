@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+Model & Accuracy & Macro_Precision & Macro_Recall & Macro_F1 & Weighted_Precision & Weighted_Recall & Weighted_F1 & Micro_Precision & Micro_Recall & Micro_F1 & Integrated_Score \\
+\midrule
+BalancedRandomForest & 0.0110 & 0.0044 & 0.0233 & 0.0075 & 0.0044 & 0.0110 & 0.0099 & 0.0110 & 0.0110 & 0.0110 & 0.0076 \\
+EasyEnsemble & 0.0146 & 0.0332 & 0.0014 & 0.0129 & 0.0638 & 0.0146 & 0.0259 & 0.0146 & 0.0146 & 0.0146 & 0.0206 \\
+XGBClassifier_SPW24 & 0.0090 & 0.0150 & 0.0152 & 0.0164 & 0.0028 & 0.0090 & 0.0062 & 0.0090 & 0.0090 & 0.0090 & 0.0102 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-seed standard deviation across metrics.}
+\label{tab:cross_seed_std}
+\end{table}

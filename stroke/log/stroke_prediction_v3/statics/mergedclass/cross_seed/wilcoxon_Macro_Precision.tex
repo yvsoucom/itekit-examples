@@ -1,0 +1,47 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llr}
+\toprule
+Model_A & Model_B & p_value \\
+\midrule
+BalancedRandomForest & DTmodel & 0.2500 \\
+BalancedRandomForest & EasyEnsemble & 0.2500 \\
+BalancedRandomForest & GradientBoosting & 0.7500 \\
+BalancedRandomForest & LogisticRegression & 1.0000 \\
+BalancedRandomForest & XGBClassifier_SPW24 & 1.0000 \\
+BalancedRandomForest & XGBmodel & 0.5000 \\
+BalancedRandomForest & random_forest & 0.5000 \\
+BalancedRandomForest & sklearn_SVM & 1.0000 \\
+DTmodel & EasyEnsemble & 0.5000 \\
+DTmodel & GradientBoosting & 0.5000 \\
+DTmodel & LogisticRegression & 1.0000 \\
+DTmodel & XGBClassifier_SPW24 & 0.5000 \\
+DTmodel & XGBmodel & 0.5000 \\
+DTmodel & random_forest & 0.2500 \\
+DTmodel & sklearn_SVM & 1.0000 \\
+EasyEnsemble & GradientBoosting & 0.5000 \\
+EasyEnsemble & LogisticRegression & 1.0000 \\
+EasyEnsemble & XGBClassifier_SPW24 & 0.2500 \\
+EasyEnsemble & XGBmodel & 0.5000 \\
+EasyEnsemble & random_forest & 0.2500 \\
+EasyEnsemble & sklearn_SVM & 1.0000 \\
+GradientBoosting & LogisticRegression & 0.7500 \\
+GradientBoosting & XGBClassifier_SPW24 & 1.0000 \\
+GradientBoosting & XGBmodel & 1.0000 \\
+GradientBoosting & random_forest & 0.7500 \\
+GradientBoosting & sklearn_SVM & 0.7500 \\
+LogisticRegression & XGBClassifier_SPW24 & 0.5000 \\
+LogisticRegression & XGBmodel & 0.2500 \\
+LogisticRegression & random_forest & 0.2500 \\
+LogisticRegression & sklearn_SVM & 0.7500 \\
+XGBClassifier_SPW24 & XGBmodel & 0.5000 \\
+XGBClassifier_SPW24 & random_forest & 0.2500 \\
+XGBClassifier_SPW24 & sklearn_SVM & 1.0000 \\
+XGBmodel & random_forest & 0.7500 \\
+XGBmodel & sklearn_SVM & 0.7500 \\
+random_forest & sklearn_SVM & 1.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Wilcoxon signed-rank test (Macro_Precision).}
+\label{tab:wilcoxon_Macro_Precision}
+\end{table}

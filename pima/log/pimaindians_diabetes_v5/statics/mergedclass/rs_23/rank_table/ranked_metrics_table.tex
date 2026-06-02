@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.7787 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & M\_R & 0.7491 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/XGBmodel} & 0.2 & 0.5  & 23 \\ 
+ & M\_F1 & 0.7532 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.5  & 23 \\ 
+ & m\_P & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & m\_R & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & m\_F1 & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & W\_P & 0.7823 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_R & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & W\_F1 & 0.7791 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & Acc & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.7763 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & M\_R & 0.7491 & \texttt{4/biMaxInfgain/standard\_\_noAug\_\_noImbl/XGBmodel} & 0.2 & 0.5  & 23 \\ 
+ & M\_F1 & 0.7532 & \texttt{4/biMaxInfgain/noAug\_\_noImbl\_\_standard/XGBmodel} & 0.2 & 0.5  & 23 \\ 
+ & m\_P & 0.7857 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_R & 0.7857 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_F1 & 0.7857 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_P & 0.7823 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & W\_R & 0.7857 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_F1 & 0.7791 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & Acc & 0.7857 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.7763 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & M\_R & 0.7441 & \texttt{7/biMaxInfgain/standard\_\_noAug\_\_noImbl/random\_forest} & 0.2 & 0.5  & 23 \\ 
+ & M\_F1 & 0.7517 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_P & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_R & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_F1 & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_P & 0.7823 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_R & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_F1 & 0.7776 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & Acc & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.7763 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & M\_R & 0.7441 & \texttt{7/biMaxInfgain/noAug\_\_noImbl\_\_standard/random\_forest} & 0.2 & 0.5  & 23 \\ 
+ & M\_F1 & 0.7517 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_P & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_R & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_F1 & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_P & 0.7816 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_R & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_F1 & 0.7776 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & Acc & 0.7857 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.7738 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & M\_R & 0.7413 & \texttt{4/infgain/noAug\_\_noImbl\_\_standard/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & M\_F1 & 0.7489 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/sklearn\_SVM} & 0.2 & 0.5  & 23 \\ 
+ & m\_P & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_R & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & m\_F1 & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_P & 0.7816 & \texttt{4/infgain/standard\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_R & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & W\_F1 & 0.7776 & \texttt{4/infgain/minmax\_\_noAug\_\_noImbl/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+ & Acc & 0.7857 & \texttt{4/infgain/noAug\_\_noImbl\_\_minmax/LogisticRegression} & 0.2 & 0.5  & 23 \\ 
+\hline
+\end{tabular}
+\end{table*}

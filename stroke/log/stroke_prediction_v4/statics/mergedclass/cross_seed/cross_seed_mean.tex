@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+Model & Accuracy & Macro_Precision & Macro_Recall & Macro_F1 & Weighted_Precision & Weighted_Recall & Weighted_F1 & Micro_Precision & Micro_Recall & Micro_F1 & Integrated_Score \\
+\midrule
+BalancedRandomForest & 0.6138 & 0.5458 & 0.7145 & 0.4610 & 0.9434 & 0.6138 & 0.7115 & 0.6138 & 0.6138 & 0.6138 & 0.6418 \\
+EasyEnsemble & 0.2403 & 0.3027 & 0.5842 & 0.1973 & 0.5169 & 0.2403 & 0.2660 & 0.2403 & 0.2403 & 0.2403 & 0.3060 \\
+XGBClassifier_SPW24 & 0.8900 & 0.5558 & 0.5896 & 0.5608 & 0.9208 & 0.8900 & 0.9035 & 0.8900 & 0.8900 & 0.8900 & 0.7823 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-seed mean performance across metrics.}
+\label{tab:cross_seed_mean}
+\end{table}

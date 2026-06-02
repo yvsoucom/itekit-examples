@@ -1,0 +1,67 @@
+\begin{table*}[htbp]
+\caption{Top-ranked pipelines under different evaluation metrics.}
+\label{tab:rank_metric_vertical}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|l|c|>{\ttfamily\footnotesize}p{7.2cm}|c|c|c|}
+\hline
+Rank & Metric & Value & LogDir & Norm\_First & Split\_Ratio & P\_th \\
+\hline
+\multirow{10}{*}{1} & M\_P & 0.6217 & \texttt{10/noSelect/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & M\_R & 0.7955 & \texttt{8/infgain/standard\_\_gaussian\_noise\_\_noImbl/BalancedRandomForest} & 0.2 & 0.3  & 5012 \\ 
+ & M\_F1 & 0.6064 & \texttt{7/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/BalancedRandomForest} & 0.1 & 0.5  & 5012 \\ 
+ & m\_P & 0.9413 & \texttt{9/biMaxInfgain/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.9413 & \texttt{9/biMaxInfgain/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.9413 & \texttt{9/biMaxInfgain/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.9549 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/BalancedRandomForest} & 0.1 & 0.1  & 5012 \\ 
+ & W\_R & 0.9413 & \texttt{9/biMaxInfgain/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.9311 & \texttt{10/noSelect/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & Acc & 0.9413 & \texttt{9/biMaxInfgain/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{2} & M\_P & 0.6113 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7896 & \texttt{6/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_standard/BalancedRandomForest} & 0.2 & 0.35  & 5012 \\ 
+ & M\_F1 & 0.6012 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.2 & 0.25  & 5012 \\ 
+ & m\_P & 0.9393 & \texttt{7/infgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.9393 & \texttt{7/infgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.9393 & \texttt{7/infgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.9549 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/BalancedRandomForest} & 0.1 & 0.1  & 5012 \\ 
+ & W\_R & 0.9393 & \texttt{9/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.9291 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.9393 & \texttt{7/infgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{3} & M\_P & 0.6113 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7877 & \texttt{8/infgain/standard\_\_mixup\_\_noImbl/BalancedRandomForest} & 0.2 & 0.35  & 5012 \\ 
+ & M\_F1 & 0.6012 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.25  & 5012 \\ 
+ & m\_P & 0.9393 & \texttt{9/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.9393 & \texttt{9/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.9393 & \texttt{9/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.9546 & \texttt{7/biMaxInfgain/mixup\_\_noImbl\_\_minmax/BalancedRandomForest} & 0.1 & 0.1  & 5012 \\ 
+ & W\_R & 0.9393 & \texttt{10/noSelect/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.9291 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.9393 & \texttt{9/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{4} & M\_P & 0.6079 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7870 & \texttt{9/biMaxInfgain/standard\_\_gaussian\_noise\_\_noImbl/BalancedRandomForest} & 0.2 & 0.3  & 5012 \\ 
+ & M\_F1 & 0.5976 & \texttt{7/biMaxInfgain/mixup\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.35  & 5012 \\ 
+ & m\_P & 0.9393 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.9393 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.9393 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.9546 & \texttt{10/noSelect/minmax\_\_noAug\_\_noImbl/BalancedRandomForest} & 0.1 & 0.1  & 5012 \\ 
+ & W\_R & 0.9393 & \texttt{7/infgain/minmax\_\_gaussian\_noise\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.9285 & \texttt{7/infgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.9393 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\multirow{10}{*}{5} & M\_P & 0.6079 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & M\_R & 0.7860 & \texttt{9/biMaxInfgain/gaussian\_noise\_\_noImbl\_\_standard/BalancedRandomForest} & 0.2 & 0.3  & 5012 \\ 
+ & M\_F1 & 0.5963 & \texttt{6/biMaxInfgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & m\_P & 0.9393 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_R & 0.9393 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & m\_F1 & 0.9393 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_P & 0.9546 & \texttt{10/noSelect/noAug\_\_noImbl\_\_minmax/BalancedRandomForest} & 0.1 & 0.1  & 5012 \\ 
+ & W\_R & 0.9393 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+ & W\_F1 & 0.9285 & \texttt{7/infgain/minmax\_\_noAug\_\_noImbl/XGBClassifier\_SPW24} & 0.2 & 0.5  & 5012 \\ 
+ & Acc & 0.9393 & \texttt{6/biMaxInfgain/noAug\_\_noImbl\_\_minmax/XGBClassifier\_SPW24} & 0.1 & 0.5  & 5012 \\ 
+\hline
+\end{tabular}
+\end{table*}

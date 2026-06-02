@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+Model & Accuracy & Macro_Precision & Macro_Recall & Macro_F1 & Weighted_Precision & Weighted_Recall & Weighted_F1 & Micro_Precision & Micro_Recall & Micro_F1 & Integrated_Score \\
+\midrule
+DTmodel & 0.0072 & 0.0062 & 0.0044 & 0.0055 & 0.0047 & 0.0072 & 0.0062 & 0.0072 & 0.0072 & 0.0072 & 0.0061 \\
+GradientBoosting & 0.0135 & 0.0153 & 0.0151 & 0.0149 & 0.0139 & 0.0135 & 0.0135 & 0.0135 & 0.0135 & 0.0135 & 0.0141 \\
+LogisticRegression & 0.0193 & 0.0216 & 0.0234 & 0.0231 & 0.0197 & 0.0193 & 0.0202 & 0.0193 & 0.0193 & 0.0193 & 0.0205 \\
+XGBmodel & 0.0223 & 0.0259 & 0.0277 & 0.0273 & 0.0241 & 0.0223 & 0.0237 & 0.0223 & 0.0223 & 0.0223 & 0.0243 \\
+random_forest & 0.0201 & 0.0229 & 0.0177 & 0.0195 & 0.0188 & 0.0201 & 0.0189 & 0.0201 & 0.0201 & 0.0201 & 0.0197 \\
+sklearn_SVM & 0.0269 & 0.0349 & 0.0269 & 0.0290 & 0.0290 & 0.0269 & 0.0265 & 0.0269 & 0.0269 & 0.0269 & 0.0281 \\
+\bottomrule
+\end{tabular}
+\caption{Cross-seed standard deviation across metrics.}
+\label{tab:cross_seed_std}
+\end{table}

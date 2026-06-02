@@ -1,0 +1,47 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llr}
+\toprule
+Model_A & Model_B & Cliffs_Delta \\
+\midrule
+BalancedRandomForest & DTmodel & 0.7778 \\
+BalancedRandomForest & EasyEnsemble & 1.0000 \\
+BalancedRandomForest & GradientBoosting & -0.3333 \\
+BalancedRandomForest & LogisticRegression & 0.3333 \\
+BalancedRandomForest & XGBClassifier_SPW24 & 0.1111 \\
+BalancedRandomForest & XGBmodel & -0.3333 \\
+BalancedRandomForest & random_forest & -0.1111 \\
+BalancedRandomForest & sklearn_SVM & 0.3333 \\
+DTmodel & EasyEnsemble & 0.3333 \\
+DTmodel & GradientBoosting & -0.5556 \\
+DTmodel & LogisticRegression & 0.3333 \\
+DTmodel & XGBClassifier_SPW24 & -0.3333 \\
+DTmodel & XGBmodel & -0.5556 \\
+DTmodel & random_forest & -1.0000 \\
+DTmodel & sklearn_SVM & -0.1111 \\
+EasyEnsemble & GradientBoosting & -0.7778 \\
+EasyEnsemble & LogisticRegression & 0.3333 \\
+EasyEnsemble & XGBClassifier_SPW24 & -0.7778 \\
+EasyEnsemble & XGBmodel & -0.7778 \\
+EasyEnsemble & random_forest & -1.0000 \\
+EasyEnsemble & sklearn_SVM & -0.3333 \\
+GradientBoosting & LogisticRegression & 0.3333 \\
+GradientBoosting & XGBClassifier_SPW24 & 0.3333 \\
+GradientBoosting & XGBmodel & 0.1111 \\
+GradientBoosting & random_forest & -0.1111 \\
+GradientBoosting & sklearn_SVM & 0.1111 \\
+LogisticRegression & XGBClassifier_SPW24 & -0.3333 \\
+LogisticRegression & XGBmodel & -0.5556 \\
+LogisticRegression & random_forest & -0.5556 \\
+LogisticRegression & sklearn_SVM & -0.5556 \\
+XGBClassifier_SPW24 & XGBmodel & -0.1111 \\
+XGBClassifier_SPW24 & random_forest & -0.5556 \\
+XGBClassifier_SPW24 & sklearn_SVM & 0.1111 \\
+XGBmodel & random_forest & 0.1111 \\
+XGBmodel & sklearn_SVM & 0.1111 \\
+random_forest & sklearn_SVM & 0.3333 \\
+\bottomrule
+\end{tabular}
+\caption{Cliff's Delta effect sizes (Macro_Precision).}
+\label{tab:cliffs_Macro_Precision}
+\end{table}
