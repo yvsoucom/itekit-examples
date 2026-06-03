@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llr}
+\toprule
+Model_A & Model_B & Cliffs_Delta \\
+\midrule
+BalancedRandomForest & GradientBoosting & -1.0000 \\
+BalancedRandomForest & LogisticRegression & -1.0000 \\
+BalancedRandomForest & XGBmodel & -1.0000 \\
+BalancedRandomForest & random_forest & 1.0000 \\
+GradientBoosting & LogisticRegression & -1.0000 \\
+GradientBoosting & XGBmodel & 1.0000 \\
+GradientBoosting & random_forest & 1.0000 \\
+LogisticRegression & XGBmodel & 1.0000 \\
+LogisticRegression & random_forest & 1.0000 \\
+XGBmodel & random_forest & 1.0000 \\
+\bottomrule
+\end{tabular}
+\caption{Cliff's Delta effect sizes (Weighted_Precision).}
+\label{tab:cliffs_Weighted_Precision}
+\end{table}
